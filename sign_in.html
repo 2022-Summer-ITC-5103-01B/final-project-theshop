@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/queries.css">
    
 </head>
 
@@ -33,70 +34,39 @@
                 </ul>
             </nav>
         </header>
-        <h1 id="book_h1">New Arrivals</h1>
+        <h1 id="book_h1">Welcome Again</h1>
         <main>
-            <div id="maindiv">
-                <div id="video"> 
-                    <h2 id="h2_video">Best Sellers</h2>
-                        <div class="frame">
-                            <div class="galery">
-                                <img  src="./aycan_images/img1.jpg" class=img/>
-                                <img  src="./aycan_images/img2.jpg"class=img/>
-                                <img  src="./aycan_images/img3.jpg"class=img/>
-                                <img  src="./aycan_images/img4.jpg"class=img/>
-                            </div>
-                        </div>
-
-
+            <div class="container">
+                <div class="grid signUpHeader">
+                    <h2>Sign Up</h2>
+                    <h3 class="grey">Please fill in this form to create an account!</h3> </div>
+                <div class="grid FirstName">
+                    <input class="grey input" type="text"  placeholder="First Name">
                 </div>
-                <div class="book">
-                    <img
-                        src="aycan_images/img1.jpg" class=img>
-
-                    <p><strong>Normal People</strong><br>
-                        by <strong>Rooner,Sally</strong><br>
-                        Paperback<br>
-                        <strong>$10.55</strong><br>
-                        List price:$23.00
-                    </p>
-                    <a href="" class="book_button">Add to Chart &#8594;</a>
-
+                <div class="grid LastName"> 
+                    <input class="grey input" type="text"  placeholder="Last Name"> </div>
+                <div class="grid Email">
+                    <input class="grey input" type="email"  placeholder="Email">
                 </div>
-                <div  class="book">
-                    <img
-                        src="aycan_images/img2.jpg" class=img>
-
-                    <p><strong>Diary of a Wimpy Kid</strong><br>
-                        by <strong>Kinney,Jeff</strong><br>
-                        Paperback<br>
-                        <strong>$10.55</strong><br>
-                        List price:$23.00
-                    </p>
-                    <a href="" class="book_button">Add to Chart &#8594;</a>    
+                <div class="grid Password">
+                    <input class="grey input" type="password" placeholder="Password">
                 </div>
-                <div class="book">
-                    <img
-                        src="aycan_images/img3.jpg" class=img>
-
-                    <p><strong>Don Quixote</strong><br>
-                        by <strong>Cervantes, Miguel De</strong><br>
-                        Paperback<br>
-                        <strong>$65.00</strong><br>
-                        List price:$23.00
-                    </p>
-                    <a href="" class="book_button">Add to Chart &#8594;</a>   
+                <div class="grid Confirmed">
+                    <input class="grey input" type="password" placeholder="Confirm Password">
                 </div>
-                <div class="book">
-                    <img
-                        src="aycan_images/img4.jpg" class=img>
-
-                    <p><strong>Don Quixote</strong><br>
-                        by <strong>Cervantes, Miguel De</strong><br>
-                        Paperback<br>
-                        <strong>$55.86</strong><br>
-                        List price:$23.00
-                    </p>
-                    <a href="" class="book_button">Add to Chart &#8594;</a>   
+                <div class="grid Terms">
+                    <input type="checkbox" id="C1">
+                    <label for="C1">I accept the Terms of Use & Privacy Policy</label>
+                </div>
+                <div class="grid SignUp">
+                    <button id="signUp" class="grey input signUp" type="submit">Sign Up</button>
+                    <!-- <input id="signUp" class="grey input" type="submit" value="Submit"> -->
+                </div>
+                <div class="grid Cancel">
+                    <button id="reset" class="grey input" type="reset">Cancel</button>
+                </div>
+                <div class="grid Login">
+                <p>Already have an account?<a href ="#"> Login here</a></p> 
                 </div>
 
             </div>

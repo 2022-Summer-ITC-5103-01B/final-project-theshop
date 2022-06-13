@@ -17,6 +17,10 @@ body{
     width: 90%;
     margin-left: 12%;
 }
+.img{
+    width: 180px;
+    height: 275px;
+}
       
 .book {
     margin: 2em;
@@ -25,7 +29,7 @@ body{
 
 .book_button {
     display: inline-block;
-    background: #87abe3;
+    background: #0d2b5b;
     color: #fff;
     padding: 4px 20px;
     margin: 20px 0;
@@ -83,6 +87,77 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
+
+/*SIGN_IN PAGE STARTS  */
+.container{
+    grid-template:100px / 1fr 1fr ;
+    width: 40%;
+    margin: 0 30% 2% 30%;
+    display: grid;
+    gap: 20px;
+    padding: 1% 5%;
+    
+    }
+  
+.grey{
+    color: rgb(152, 149, 149);
+    font-size: 18px;
+    padding: 10px;
+}
+.input{
+    border-radius: 2px;
+    border: 0px;
+}
+.signUpHeader{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 3px solid rgb(218, 213, 213);
+}
+
+.Email{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.Password{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.Confirmed{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.Terms{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.Login{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#signUp:focus{
+    color: white;
+    background-color: rgb(3, 51, 3);
+}
+#reset:focus{
+    color: white;
+    background-color: red;
+}
+
+
+/*SIGN_IN PAGE ENDS */
 
 /* HEADER & NAVIGATION SECTION STARTS */
 .header {
