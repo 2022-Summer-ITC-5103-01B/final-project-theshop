@@ -1,0 +1,244 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+/* HEADER SECTION STARTS */
+header {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo-img {
+    display: block; /* To remove extra space below the image */
+    width: 7rem;
+}
+#bar{
+    width: 1rem;
+}
+#main-nav-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.main-nav-link {
+    display: inline-block;
+    color: #555;
+    font-size: .8rem;
+    text-decoration: none;
+    margin-right: 1.4rem;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #26a69a;
+}
+#icon {
+    color: #555;
+    font-size: 1.2rem;
+}
+#icon:hover {
+    color: #26a69a;
+    cursor: pointer;
+}
+/* HEADER SECTION ENDS */
+
+/* MAIN BIG IMAGE */
+#main-product-image{
+    margin-top: 2em;
+    width: auto;
+    height: 300px;
+    background-image: url("../images/nutswebp.webp");
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+/* MAIN SECTION STARTS */
+main{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% auto auto auto;
+    grid-template-areas: 
+    
+    "top-line top-line top-line top-line"
+    "sidebar items items items"
+    "sidebar items items items";
+}
+
+/* MAIN GRID ITEMS */
+#top-line{
+    grid-area: top-line;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    
+    "page-nav header-name header-description"
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#items{
+    grid-area: items;
+}
+
+/* ISIDE GRID ITEM TOP-LINE */
+/* page-nav */
+#page-nav{
+    grid-area: page-nav;
+    font-size: 12px;
+}
+#arrow-icon, #current-location{
+    color: #555;
+}
+#home, #arrow-icon, #current-location{
+    padding-right: 1em;
+}
+
+/* header-name */
+#header-name{
+    grid-area: header-name;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* header-description */
+#header-description{
+    grid-area: header-description;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    padding: 3em;
+}
+
+/* INSIDE GRID ITEM SIDEBAR */
+/* filter-options-title */
+.filter-options-title{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid #555 1px;
+    font-size: 20px;
+}
+.expand{
+    float: right;
+    font-size: 14px;
+}
+/* filter-options-content */
+.filter-options-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.filter-options-content ul li a{
+    color: #555;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* INSIDE GRID ITEM ITEMS */
+/* toolbar */
+#toolbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+#sort-button-area{
+    display: flex;
+}
+#sort-button-area button{
+    border: 1px solid #555;
+    border-radius: 25%;
+    margin-left: 1em;
+}
+/* products-container */
+#products-container{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-item{
+    width: calc(100%/3);
+    height: 400px;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+    
+}
+.item-link{
+    text-decoration: none;
+    color: black;
+}
+.price-block{
+    margin-top: 1rem;
+}
+.price-label{
+    font-size: 14px;
+}
+.price{
+    font-size: 18px;
+}
+.image-wrapper{
+    width: auto;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#almond1{
+    background-image: url("../images/nuts-items/almonds/almond1.jpg");
+}
+#almond2{
+    background-image: url("../images/nuts-items/almonds/almond2.jpg");
+}
+#almond3{
+    background-image: url("../images/nuts-items/almonds/almond3.jpg");
+}
+#almond4{
+    background-image: url("../images/nuts-items/almonds/almond4.jpg");
+}
+#almond5{
+    background-image: url("../images/nuts-items/almonds/almond5.jpg");
+}
+#almond6{
+    background-image: url("../images/nuts-items/almonds/almond6.jpg");
+}
+#almond7{
+    background-image: url("../images/nuts-items/almonds/almond7.jpg");
+}
+#almond8{
+    background-image: url("../images/nuts-items/almonds/almond8.jpg");
+}
+#almond9{
+    background-image: url("../images/nuts-items/almonds/almond9.jpg");
+}
+#almond10{
+    background-image: url("../images/nuts-items/almonds/almond10.jpg");
+}
+#almond11{
+    background-image: url("../images/nuts-items/almonds/almond11.jpg");
+}
+#almond12{
+    background-image: url("../images/nuts-items/almonds/almond12.jpg");
+}
+#almond13{
+    background-image: url("../images/nuts-items/almonds/almond13.jpg");
+}
