@@ -22,10 +22,10 @@ header {
 }
 #logo-img {
     display: block; /* To remove extra space below the image */
-    width: 7rem;
+    width: 8rem;
 }
-#bar{
-    width: 1rem;
+#menu-bar{
+    display: none;
 }
 #main-nav-list {
     display: flex;
@@ -35,7 +35,7 @@ header {
 .main-nav-link {
     display: inline-block;
     color: #555;
-    font-size: .8rem;
+    font-size: 1rem;
     text-decoration: none;
     margin-right: 1.4rem;
 }
@@ -57,18 +57,18 @@ header {
 #main-product-image{
     margin-top: 2em;
     width: auto;
-    height: 300px;
+    height: 350px;
     background-image: url("../images/nutswebp.webp");
     background-size: cover;
     margin-bottom: 1em;
 }
 
+
 /* MAIN SECTION STARTS */
 main{
-    height: 1000px;
     display: grid;
     grid-template-columns: 1.1fr 1fr 1fr 1fr;
-    grid-template-rows: 20% auto auto auto;
+    grid-template-rows: 200px auto auto;
     grid-template-areas: 
     
     "top-line top-line top-line top-line"
@@ -97,7 +97,7 @@ main{
 /* page-nav */
 #page-nav{
     grid-area: page-nav;
-    font-size: 12px;
+    font-size: 14px;
 }
 #arrow-icon, #current-location{
     color: #555;
@@ -120,7 +120,7 @@ main{
     grid-area: header-description;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
     padding: 3em;
 }
@@ -146,7 +146,8 @@ main{
 .filter-options-content ul li a{
     color: #555;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 /* INSIDE GRID ITEM ITEMS */
@@ -154,15 +155,26 @@ main{
 #toolbar{
     display: flex;
     justify-content: space-around;
-    font-size: 12px;
+    font-size: 14px;
 }
-#sort-button-area{
-    display: flex;
+#sort{
+    border: none;
+    border-radius: 20px;
+    padding: .7rem;
+    font-family: 'Poppins';
+    background-image: linear-gradient(to right, #87abe3 0%, #79CBCA  51%, #87abe3  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200%;
+    color: white;
+    margin-left: 2rem;
 }
-#sort-button-area button{
-    border: 1px solid #555;
-    border-radius: 25%;
-    margin-left: 1em;
+#sort:hover{
+    background-position: right center;
+    cursor: pointer;
+}
+option{
+    color: #555;
 }
 /* products-container */
 #products-container{
@@ -181,11 +193,51 @@ main{
     justify-content: center;
     text-align: center;
     padding-left: 1rem;
-    
+}
+.add-somewhere{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 70%;
+    width: 0px;
+    transition: height 0.5s;
+}
+.add-to-cart{
+    color: white;
+    background-image: linear-gradient(to right, #87abe3 0%, #79CBCA  51%, #87abe3  100%);
+    transition: 0.5s;
+    background-size: 200%;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 70%;
+}
+.add-to-cart:hover{
+    background-position: right center;
+    cursor: pointer;
+}
+.add-somewhere-after{
+    display: none;
+}
+.cart-icon{
+    color: white;
+    font-size: 25px;
+    margin-right: 7px;
+}
+.heart-icon, .heart-icon-after{
+    color: #555;
+    font-size: 0px;
+}
+.heart-icon:hover, .heart-icon-after:hover{
+    color: #26a69a;
+    cursor: pointer;
 }
 .item-link{
     text-decoration: none;
     color: black;
+}
+.reviews{
+    font-size: 16px;
+    color: #555;
 }
 .price-block{
     margin-top: 1rem;
@@ -202,6 +254,13 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+.image-wrapper:hover .add-somewhere{
+    height: 100%;
+    width: 100%;
+}
+.image-wrapper:hover .heart-icon{
+    font-size: 25px;
 }
 #almond1{
     background-image: url("../images/nuts-items/almonds/almond1.jpg");
@@ -241,4 +300,152 @@ main{
 }
 #almond13{
     background-image: url("../images/nuts-items/almonds/almond13.jpg");
+}
+#page-area{
+    border-bottom: #555 1px solid;
+    border-top: #555 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+#pages span{
+    margin-left: 2rem;
+}
+#pages span:hover{
+    cursor: pointer;
+}
+#page-button{
+    border: #555 2px solid;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    font-size: 25px;
+    color: #555;
+}
+#page-button:hover{
+    border: #26a69a 2px solid;
+    color: #26a69a;
+    cursor: pointer;
+}
+#contact{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/nuts-contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+#help{
+    font-size: 50px;
+    color: #26a69a;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#contact-text{
+    margin-top: 0;
+}
+#contact button{
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    background-color: rgba(28, 28, 28, 0.5);
+    color: white;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+#contact button:hover{
+    background-color: #26a69a;
+    cursor: pointer;
+}
+/* FOOTER SECTION STARTS */
+footer{
+    background-color: black;
+    color: #8a8a8a;
+    padding: 3rem 6rem 1rem;
+}
+#footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+.footer-title-text {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #26a69a;
+}
+.footer-text {
+    font-size: 1rem;
+    color: #8a8a8a;
+}
+#app-icons {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+#footer-logo-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 20px;
+}
+#footer-nav-list {
+    list-style-type: none;
+}
+.footer-nav-link {
+    font-size: 1rem;
+    color: #8a8a8a; 
+    text-decoration: none;
+}
+.footer-nav-link:hover {
+    color: #e5e7e9;
+}
+#social-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.footer-icon{
+    margin-left: 1rem;
+}
+.footer-icon:hover {
+    color: #e5e7e9;
+}
+#middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+#right{
+    display: flex;
+    justify-content: space-around;
+}
+#copyright {
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* FOOTER SECTION ENDS */
+
+
+#filters{
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-color: #26a69a;
+    bottom: 0;
+    position: fixed;
 }
