@@ -1,4 +1,4 @@
-## Assignment Name: : Project Task List 6
+## Assignment Name: : Project Task List 7
 
 
 
@@ -14,9 +14,7 @@
 
 
 
-- [x] Update the Layout with HTML and CSS for one of your project features and make it responsive
-
-- [x] Add header, navigation, and footer area for your feature
+- [x] Layout with  HTML and CSS for your second project feature
 
 
 
