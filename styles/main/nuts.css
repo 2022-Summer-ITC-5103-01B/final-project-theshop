@@ -1,68 +1,17 @@
-@font-face{
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins-Regular.ttf");
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 .wrapper{
     width: 95%;
     margin: 0 auto;
 }
-/* HEADER SECTION STARTS */
-header {
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#logo-img {
-    display: block; /* To remove extra space below the image */
-    width: 8rem;
-}
-#menu-bar{
-    display: none;
-}
-#main-nav-list {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-.main-nav-link {
-    display: inline-block;
-    color: #555;
-    font-size: 1rem;
-    text-decoration: none;
-    margin-right: 1.4rem;
-}
-.main-nav-link:hover,
-.main-nav-link:active {
-    color: #26a69a;
-}
-#icon {
-    color: #555;
-    font-size: 1.2rem;
-}
-#icon:hover {
-    color: #26a69a;
-    cursor: pointer;
-}
-/* HEADER SECTION ENDS */
 
 /* MAIN BIG IMAGE */
 #main-product-image{
     margin-top: 2em;
     width: auto;
     height: 350px;
-    background-image: url("../images/nutswebp.webp");
+    background-image: url("../../images/nutswebp.webp");
     background-size: cover;
     margin-bottom: 1em;
 }
-
 
 /* MAIN SECTION STARTS */
 main{
@@ -86,7 +35,7 @@ main{
     
     "page-nav header-name header-description"
 }
-#sidebar{
+.sidebar{
     grid-area: sidebar;
 }
 #items{
@@ -133,6 +82,10 @@ main{
     border-bottom: solid #555 1px;
     font-size: 20px;
 }
+.filter-options-title:hover{
+    color: #26a69a;
+    cursor: pointer;
+}
 .expand{
     float: right;
     font-size: 14px;
@@ -148,6 +101,10 @@ main{
     text-decoration: none;
     font-size: 14px;
     line-height: 30px;
+}
+.filter-options-content ul li a:hover{
+    color: black;
+    cursor: pointer;
 }
 
 /* INSIDE GRID ITEM ITEMS */
@@ -263,43 +220,43 @@ option{
     font-size: 25px;
 }
 #almond1{
-    background-image: url("../images/nuts-items/almonds/almond1.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond1.jpg");
 }
 #almond2{
-    background-image: url("../images/nuts-items/almonds/almond2.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond2.jpg");
 }
 #almond3{
-    background-image: url("../images/nuts-items/almonds/almond3.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond3.jpg");
 }
 #almond4{
-    background-image: url("../images/nuts-items/almonds/almond4.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond4.jpg");
 }
 #almond5{
-    background-image: url("../images/nuts-items/almonds/almond5.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond5.jpg");
 }
 #almond6{
-    background-image: url("../images/nuts-items/almonds/almond6.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond6.jpg");
 }
 #almond7{
-    background-image: url("../images/nuts-items/almonds/almond7.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond7.jpg");
 }
 #almond8{
-    background-image: url("../images/nuts-items/almonds/almond8.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond8.jpg");
 }
 #almond9{
-    background-image: url("../images/nuts-items/almonds/almond9.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond9.jpg");
 }
 #almond10{
-    background-image: url("../images/nuts-items/almonds/almond10.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond10.jpg");
 }
 #almond11{
-    background-image: url("../images/nuts-items/almonds/almond11.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond11.jpg");
 }
 #almond12{
-    background-image: url("../images/nuts-items/almonds/almond12.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond12.jpg");
 }
 #almond13{
-    background-image: url("../images/nuts-items/almonds/almond13.jpg");
+    background-image: url("../../images/nuts-items/almonds/almond13.jpg");
 }
 #page-area{
     border-bottom: #555 1px solid;
@@ -331,7 +288,7 @@ option{
 #contact{
     width: 100%;
     height: 500px;
-    background-image: url("../images/nuts-contact.jpg");
+    background-image: url("../../images/nuts-contact.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -365,87 +322,25 @@ option{
     background-color: #26a69a;
     cursor: pointer;
 }
-/* FOOTER SECTION STARTS */
-footer{
-    background-color: black;
-    color: #8a8a8a;
-    padding: 3rem 6rem 1rem;
-}
-#footer-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-}
-.footer-title-text {
-    margin-bottom: 0.5rem;
-    font-size: 1.15rem;
-    font-weight: 500;
-    color: #26a69a;
-}
-.footer-text {
-    font-size: 1rem;
-    color: #8a8a8a;
-}
-#app-icons {
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 1.6rem;
-    margin-bottom: 1.6rem;
-}
-#footer-logo-img {
-    width: 12.5rem;
-    height: 12.5rem;
-    margin-bottom: 20px;
-}
-#footer-nav-list {
-    list-style-type: none;
-}
-.footer-nav-link {
-    font-size: 1rem;
-    color: #8a8a8a; 
-    text-decoration: none;
-}
-.footer-nav-link:hover {
-    color: #e5e7e9;
-}
-#social-nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-.footer-icon{
-    margin-left: 1rem;
-}
-.footer-icon:hover {
-    color: #e5e7e9;
-}
-#middle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-}
-#right{
-    display: flex;
-    justify-content: space-around;
-}
-#copyright {
-    font-size: 0.8rem;
-    text-align: center;
-}
-/* FOOTER SECTION ENDS */
-
-
 #filters{
     display: none;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #26a69a;
     bottom: 0;
     position: fixed;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    font-family: "Poppins"; 
+    box-shadow: 0px -4px 5px -3px #555;
+    overflow-y:scroll;
+}
+
+#filters:hover{
+    height: 500px;
+    transition: height 0.5s;
+    background-color: white;
+    color: #555;
 }
