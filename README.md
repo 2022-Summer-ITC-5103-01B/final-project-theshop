@@ -14,7 +14,7 @@
 
 
 
-- [x] Layout with  HTML and CSS for your second project feature
+- [x] Layout with  HTML and CSS for your third project feature
 
 
 
