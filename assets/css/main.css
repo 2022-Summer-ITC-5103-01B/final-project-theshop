@@ -112,6 +112,12 @@ body{
     width: 90%;
     margin-left: 12%;
 }
+
+#maindiv2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
 .img{
     width: 180px;
     height: 275px;
@@ -120,6 +126,8 @@ body{
 .book {
     margin: 2em;
     box-sizing: border-box;
+    
+    
             }
 
 .book_button {
@@ -131,11 +139,7 @@ body{
     border-radius: 20px;
     font-size: 0.75em;
 }
-#video{
-    width: 25%;
-    
 
-}
 #h2_video{text-align: center;}
 
 .frame{
@@ -170,7 +174,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
+    width: 25%;
+        
+    
+    }
 }
 .book_button{
    margin-bottom: 0;
@@ -184,15 +192,37 @@ body {
 }
 
 /*SIGN_IN PAGE STARTS  */
-.container{
-    grid-template:100px / 1fr 1fr ;
+.scontainer{
+    grid-template-columns:300px 300px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
     width: 40%;
     margin: 0 30% 2% 30%;
     display: grid;
     gap: 20px;
-    padding: 1% 5%;
-    
+    padding: 10px;
+    grid-template-areas:
+    "head head"
+    "firstName lastName"
+    "email email"
+    "password password"
+    "confirm confirm"
+    "policy policy"
+    "signup cancel"
+    "login login"
+    ;
+         
     }
+
+    .sdiv1{ grid-area: head;}
+    .sdiv2{ grid-area: firstName;}
+    .sdiv3{ grid-area: lastName;}
+    .sdiv4{ grid-area: email;}
+    .sdiv5{ grid-area: password;}
+    .sdiv6{ grid-area: confirm;}
+    .sdiv7{ grid-area: policy;}
+    .sdiv8{ grid-area: signup;}
+    .sdiv9{ grid-area: cancel;}
+    .sdiv10{ grid-area: login;}
   
 .grey{
     color: rgb(152, 149, 149);
@@ -204,42 +234,7 @@ body {
     border: 0px;
 }
 .signUpHeader{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
     border-bottom: 3px solid rgb(218, 213, 213);
-}
-
-.Email{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.Password{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.Confirmed{
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.Terms{
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.Login{
-    grid-row-start: 8;
-    grid-row-end: 9;
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 
 #signUp:focus{
@@ -253,6 +248,7 @@ body {
 
 
 /*SIGN_IN PAGE ENDS */
+
 
 /* HEADER & NAVIGATION SECTION STARTS */
 .header {

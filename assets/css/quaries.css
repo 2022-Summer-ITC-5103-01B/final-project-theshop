@@ -1,6 +1,39 @@
-@media only screen and (min-width: 500px) and (max-width:768px){
-/*Nav Menu*/
 
+/*Sign_In Page Starts*/
+
+@media only screen and (max-width:768px){
+    .scontainer{
+        grid-template-columns:300px;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        width: 40%;
+        margin: 0 30% 2% 30%;
+        display: grid;
+        gap: 20px;
+        padding: 10px;
+        grid-template-areas:
+        "head"
+        "firstName"
+        "lastName"
+        "email"
+        "password"
+        "confirm"
+        "policy"
+        "signup"
+        "cancel"
+        "login"
+        ;
+             
+        }
+    
+}
+/*/*Sign_In Page Ends*/
+
+    /*Nav Menu*/
+
+@media only screen and (min-width: 500px) and (max-width:766px){
+    #grid2{
+        width: 90%;
+    }
 .main-nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +75,7 @@
     }
 
     }
-    @media only screen and (min-width: 769px) and (max-width:912px){
+    @media only screen and (min-width: 767px) and (max-width:912px){
         #grid2{
             box-sizing: border-box;
             display: grid;
@@ -53,9 +86,10 @@
             grid-gap: 5px;
             padding: 5px;
         }
-        #footer{
+        .footer{
+            min-width: 1024px;
             background-color: black;
-            margin: 0;
+          
         }
 
 
@@ -99,15 +133,13 @@
             margin:0;
             grid-gap: 5px;
             padding: 5px;
+
         }
-
-        .app-icons {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 10px;
+        
+        .footer{
+            min-width: 498px;
+            background-color: black;
+          
         }
-
-
-
-
     }
+   

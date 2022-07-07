@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/queries.css">
+    <link rel="stylesheet" href="/assets/css/quaries.css">
+    
+  
+    
    
 </head>
 
@@ -36,36 +39,36 @@
         </header>
         <h1 id="book_h1">Welcome Again</h1>
         <main>
-            <div class="container">
-                <div class="grid signUpHeader">
+            <div class="scontainer">
+                <div class="sdiv1" id>
                     <h2>Sign Up</h2>
                     <h3 class="grey">Please fill in this form to create an account!</h3> </div>
-                <div class="grid FirstName">
+                <div class="sdiv2">
                     <input class="grey input" type="text"  placeholder="First Name">
                 </div>
-                <div class="grid LastName"> 
+                <div class="sdiv3"> 
                     <input class="grey input" type="text"  placeholder="Last Name"> </div>
-                <div class="grid Email">
+                <div class="sdiv4">
                     <input class="grey input" type="email"  placeholder="Email">
                 </div>
-                <div class="grid Password">
+                <div class="sdiv5">
                     <input class="grey input" type="password" placeholder="Password">
                 </div>
-                <div class="grid Confirmed">
+                <div class="sdiv6">
                     <input class="grey input" type="password" placeholder="Confirm Password">
                 </div>
-                <div class="grid Terms">
+                <div class="sdiv7">
                     <input type="checkbox" id="C1">
                     <label for="C1">I accept the Terms of Use & Privacy Policy</label>
                 </div>
-                <div class="grid SignUp">
+                <div class="sdiv8">
                     <button id="signUp" class="grey input signUp" type="submit">Sign Up</button>
                     <!-- <input id="signUp" class="grey input" type="submit" value="Submit"> -->
                 </div>
-                <div class="grid Cancel">
+                <div class="sdiv9">
                     <button id="reset" class="grey input" type="reset">Cancel</button>
                 </div>
-                <div class="grid Login">
+                <div class="sdiv10">
                 <p>Already have an account?<a href ="#"> Login here</a></p> 
                 </div>
 
@@ -76,56 +79,51 @@
         <footer class="footer">
 
             <!-- FOOTER ROW STARTS -->
-            <div class="footer-row">
-    
-                <!-- LEFT COLUMN STARTS -->
-                <div class="column left">
+            <div id="grid2">
+                <div id="div4"><div class="column left">
                     <p class="footer-title-text">Download our App</p>
                     <p class="footer-text">Download our app at both PlayStore as well as AppStore</p>
                     <div class="app-icons">
                         <img class="apple" src="./assets/img/apple.png" height="70px" alt="website logo">
-                        <img src="./assets/img/google.png" height="70px" alt="website logo">
+                        <img class="google" src="./assets/img/google.png" height="70px" alt="website logo">
+                    </div>
+                </div></div>
+                <div id="div5">
+                    <div class="column middle" id="div">
+                        <a href="#">
+                            <img class="footer-logo-img" src="./assets/img/logo_2.jpeg" alt="website logo">
+                        </a>
+                        <p class="footer-text">Anything you need THE SHOP is always there for you 😊</p>
                     </div>
                 </div>
-                <!-- LEFT COLUMN ENDS -->
+                <div id="div6">
+                    <div class="column right" id="div">
+                        <div>
+                            <p class="footer-title-text">Useful Links</p>
+                            <ul class="footer-nav-list">
+                                <li><a class="footer-nav-link" href="#">Home</a></li>
+                                <li><a class="footer-nav-link" href="#">Products</a></li>
+                                <li><a class="footer-nav-link" href="#">About Us</a></li>
+                                <li><a class="footer-nav-link" href="#">Store Locator</a></li>
+                                <li><a class="footer-nav-link" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
     
-                <!-- MIDDLE COLUMN STARTS -->
-                <div class="column middle">
-                    <a href="#">
-                        <img class="footer-logo-img" src="./assets/img/logo_2.jpeg" alt="website logo">
-                    </a>
-                    <p class="footer-text">Anything you need THE SHOP is always there for you 😊</p>
-                </div>
-                <!-- MIDDLE COLUMN ENDS -->
-    
-                <!-- RIGHT COLUMN STARTS -->
-                <div class="column right">
-                    <div>
-                        <p class="footer-title-text">Useful Links</p>
-                        <ul class="footer-nav-list">
-                            <li><a class="footer-nav-link" href="#">Home</a></li>
-                            <li><a class="footer-nav-link" href="#">Products</a></li>
-                            <li><a class="footer-nav-link" href="#">About Us</a></li>
-                            <li><a class="footer-nav-link" href="#">Store Locator</a></li>
-                            <li><a class="footer-nav-link" href="#">Contact Us</a></li>
-                        </ul>
+                        <div>
+                            <p class="footer-title-text">Follow us</p>
+                            <ul class="social-nav-list">
+                                <li><span class="icon footer-icon"><i class="fa fa-facebook-official"></i></span></li>
+                                <li><span class="icon footer-icon"><i class="fa fa-instagram"></i></span></li>
+                                <li><span class="icon footer-icon"><i class="fa fa-twitter"></i></span></li>
+                                <li><span class="icon footer-icon"><i class="fa fa-youtube-play"></i></span></li>
+                            </ul>
+                        </div>
                     </div>
-    
-                    <div>
-                        <p class="footer-title-text">Follow us</p>
-                        <ul class="social-nav-list">
-                            <li><span class="icon footer-icon"><i class="fa fa-facebook-official"></i></span></li>
-                            <li><span class="icon footer-icon"><i class="fa fa-instagram"></i></span></li>
-                            <li><span class="icon footer-icon"><i class="fa fa-twitter"></i></span></li>
-                            <li><span class="icon footer-icon"><i class="fa fa-youtube-play"></i></span></li>
-                        </ul>
-                    </div>
+                
                 </div>
-                <!-- RIGHT COLUMN ENDS -->
-    
+                
             </div>
-            <!-- FOOTER ROW ENDS -->
-    
+                     
             <p class="copyright">Copyright &copy 2022 - THE SHOP</p>
         </footer>
     </div>
