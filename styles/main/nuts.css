@@ -252,6 +252,9 @@ option{
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+.image-wrapper:hover{
+    cursor: pointer;
+}
 .image-wrapper:hover .add-somewhere{
     height: 100%;
     width: 100%;
