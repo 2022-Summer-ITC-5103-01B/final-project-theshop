@@ -1,16 +1,12 @@
-## Assignment Name: : Group Project Task8
+## Assignment Name: : Soundtrack Project
 
 ## Name: Aycan Lizor
 
-## Student Number:N01534088
+## Student Number: N01534088
 
 ## Tasks
 
-- [x] Create a consistent header, navigation, and footer area for your group project
-- [x] Create a style guide for your project
-
-- [x]https://classroom.github.com/a/LSROQXVQ
-
+- [x] 
 
 ## Leaning curve and challenges
 
