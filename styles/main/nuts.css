@@ -91,28 +91,57 @@ main{
     font-size: 14px;
 }
 /* filter-options-content */
+.filter-options-content{
+    opacity: 1;
+    transition: 1s;
+}
 .filter-options-content ul {
     list-style-type: none;
-    margin: 0;
+    margin: 1rem 0;
     padding: 0;
 }
-.filter-options-content ul li a{
+.filter-options-content ul li{
     color: #555;
-    text-decoration: none;
     font-size: 14px;
     line-height: 30px;
 }
-.filter-options-content ul li a:hover{
+.filter-options-content ul li:hover{
     color: black;
     cursor: pointer;
 }
 
-/* INSIDE GRID ITEM ITEMS */
-/* toolbar */
-#toolbar{
+.checkbox{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10%;
+    border: #555 1px solid;
+    margin-right: 1rem;
     display: flex;
-    justify-content: space-around;
-    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-clicked{
+    display: none;
+    font-size: 175%;
+    color:#26a69a;
+}
+.checkbox-clicked2{
+    display: block;
+    font-size: 175%;
+    color:#26a69a;
+}
+
+.checkboxArea{
+    display: flex;
+    align-items: center;
+}
+
+/* INSIDE GRID ITEM ITEMS */
+#sort-button-area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 #sort{
     border: none;
@@ -132,6 +161,18 @@ main{
 }
 option{
     color: #555;
+}
+#sort-button{
+    padding: .5rem 1rem;
+    border: #26a69a 1px solid;
+    border-radius: 5px;
+    margin-left: 2rem;
+    font-size: 16px;
+    color: #26a69a;
+}
+#sort-button:hover{
+    cursor: pointer;
+    border: #26a69a 3px solid;
 }
 /* products-container */
 #products-container{
@@ -177,8 +218,11 @@ option{
 }
 .cart-icon{
     color: white;
-    font-size: 25px;
+    font-size: 0px;
     margin-right: 7px;
+}
+.add-to-cart span:last-child{
+    font-size: 0px;
 }
 .heart-icon, .heart-icon-after{
     color: #555;
@@ -191,10 +235,6 @@ option{
 .item-link{
     text-decoration: none;
     color: black;
-}
-.reviews{
-    font-size: 16px;
-    color: #555;
 }
 .price-block{
     margin-top: 1rem;
@@ -219,71 +259,14 @@ option{
 .image-wrapper:hover .heart-icon{
     font-size: 25px;
 }
-#almond1{
-    background-image: url("../../images/nuts-items/almonds/almond1.jpg");
-}
-#almond2{
-    background-image: url("../../images/nuts-items/almonds/almond2.jpg");
-}
-#almond3{
-    background-image: url("../../images/nuts-items/almonds/almond3.jpg");
-}
-#almond4{
-    background-image: url("../../images/nuts-items/almonds/almond4.jpg");
-}
-#almond5{
-    background-image: url("../../images/nuts-items/almonds/almond5.jpg");
-}
-#almond6{
-    background-image: url("../../images/nuts-items/almonds/almond6.jpg");
-}
-#almond7{
-    background-image: url("../../images/nuts-items/almonds/almond7.jpg");
-}
-#almond8{
-    background-image: url("../../images/nuts-items/almonds/almond8.jpg");
-}
-#almond9{
-    background-image: url("../../images/nuts-items/almonds/almond9.jpg");
-}
-#almond10{
-    background-image: url("../../images/nuts-items/almonds/almond10.jpg");
-}
-#almond11{
-    background-image: url("../../images/nuts-items/almonds/almond11.jpg");
-}
-#almond12{
-    background-image: url("../../images/nuts-items/almonds/almond12.jpg");
-}
-#almond13{
-    background-image: url("../../images/nuts-items/almonds/almond13.jpg");
-}
-#page-area{
-    border-bottom: #555 1px solid;
-    border-top: #555 1px solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-#pages span{
-    margin-left: 2rem;
-}
-#pages span:hover{
-    cursor: pointer;
-}
-#page-button{
-    border: #555 2px solid;
-    border-radius: 25px;
-    padding: 1rem 1.5rem;
+.image-wrapper:hover .cart-icon{
     font-size: 25px;
-    color: #555;
 }
-#page-button:hover{
-    border: #26a69a 2px solid;
-    color: #26a69a;
-    cursor: pointer;
+.image-wrapper:hover .add-to-cart span:last-child{
+    font-size: 100%;
+}
+.almonds{
+    background-image: url("../../images/nuts-items/almonds/almonds1.jpg");
 }
 #contact{
     width: 100%;
@@ -322,7 +305,7 @@ option{
     background-color: #26a69a;
     cursor: pointer;
 }
-#filters{
+.filters{
     display: none;
     width: 100%;
     height: 60px;
@@ -335,12 +318,39 @@ option{
     padding: 0;
     font-family: "Poppins"; 
     box-shadow: 0px -4px 5px -3px #555;
-    overflow-y:scroll;
+    transition: height 0.2s;
 }
 
-#filters:hover{
+.filters-clicked{
     height: 500px;
     transition: height 0.5s;
     background-color: white;
     color: #555;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    font-size: 20px;
+    padding:0;
+    font-family: "Poppins"; 
+    box-shadow: 0px -4px 5px -3px #555;
+    overflow-y:scroll;
+}
+
+#filters-heading:hover{
+    cursor: pointer;
+}
+
+#tablet{
+    padding: 0 4rem;
+}
+
+#tablet .checkboxArea{
+    justify-content: center;
+}
+.hide{
+    opacity: 0;
+}
+.none{
+    display: none;
 }
