@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/headerFooterImg/favicon.ico" type="image/x-icon">
     <title>The Best Nuts In The World!</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -15,6 +17,7 @@
     <link rel="stylesheet" href="../styles/queries/header-footer-queries.css">
     <link rel="stylesheet" href="../styles/queries/nuts-queries.css">
 </head>
+
 <body>
     <div class="wrapper">
         <!-- HEADER SECTION STARTS -->
@@ -52,387 +55,131 @@
                     <span id="arrow-icon"><i class="fa fa-solid fa-angle-right"></i></span>
                     <span id="current-location">Nuts</span>
                 </div>
-                <div id="header-name"><h1>Nuts</h1></div>
+                <div id="header-name">
+                    <h1>Nuts</h1>
+                </div>
                 <div id="header-description">
-                    Eating nuts as part of a healthy diet may be good for your heart. Nuts contain unsaturated fatty acids and other nutrients. And they're a great snack food — inexpensive, easy to store and easy to pack when you're on the go.
+                    Eating nuts as part of a healthy diet may be good for your heart. Nuts contain unsaturated fatty
+                    acids and other nutrients. And they're a great snack food — inexpensive, easy to store and easy to
+                    pack when you're on the go.
                 </div>
             </div>
             <!-- top-line ends -->
 
             <!-- sidebar starts -->
-            <div class="sidebar">
+            <div id="desktop" class="sidebar">
                 <div class="filter-options-title">
                     <span>Category</span>
                     <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
                 </div>
                 <div class="filter-options-content">
-                    <ul>
-                        <li><a href="#">Almonds</a></li>
-                        <li><a href="#">Brazil Nuts</a></li>
-                        <li><a href="#">Cashews</a></li>
-                        <li><a href="#">Hazelnuts</a></li>
-                        <li><a href="#">Macadamia Nuts</a></li>
-                        <li><a href="#">Nut Butters</a></li>
-                        <li><a href="#">Pecans</a></li>
-                        <li><a href="#">Pistachios</a></li>
-                        <li><a href="#">Peanuts</a></li>
-                        <li><a href="#">Walnuts</a></li>
+                    <ul class="category">
+                        <li>Almonds</li>
+                        <li>Brazil Nuts</li>
+                        <li>Cashews</li>
+                        <li>Hazelnuts</li>
+                        <li>Macadamia Nuts</li>
+                        <li>Nut Butters</li>
+                        <li>Pecans</li>
+                        <li>Pistachios</li>
+                        <li>Peanuts</li>
+                        <li>Walnuts</li>
+                        <li>Nuts</li>
                     </ul>
                 </div>
                 <div class="filter-options-title">
                     <span>Vegan</span>
-                    <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                    <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
                 </div>
-                <div class="filter-options-content"></div>
+                <div class="filter-options-content">
+                    <ul>
+                        <li class="checkboxArea">
+                            <div id="vegan" class="checkbox"><i class="fa fa-solid fa-check checkbox-clicked"></i></div>
+                            <label for="vegan">Yes</label>
+                            
+                        </li>
+                    </ul>
+                </div>
                 <div class="filter-options-title">
                     <span>Salt-free</span>
-                    <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                    <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
                 </div>
-                <div class="filter-options-content"></div>
+                <div class="filter-options-content">
+                    <ul>
+                        <li class="checkboxArea">
+                            <div id="salt-free" class="checkbox"><i class="fa fa-solid fa-check checkbox-clicked"></i></div>
+                            <label for="salt-free">Yes</label>
+                        </li>
+                    </ul>
+                </div>
                 <div class="filter-options-title">
                     <span>Sugar-free</span>
-                    <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                    <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
                 </div>
-                <div class="filter-options-content"></div>
+                <div class="filter-options-content">
+                    <ul>
+                        <li class="checkboxArea">
+                            <div id="sugar-free" class="checkbox"><i class="fa fa-solid fa-check checkbox-clicked"></i></div>
+                            <label for="sugar-free">Yes</label>
+                        </li>
+                    </ul>
+                </div>
                 <div class="filter-options-title">
                     <span>Raw</span>
-                    <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                    <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
                 </div>
-                <div class="filter-options-content"></div>
+                <div class="filter-options-content">
+                    <ul>
+                        <li class="checkboxArea">
+                            <div id="raw" class="checkbox"><i class="fa fa-solid fa-check checkbox-clicked"></i></div>
+                            <label for="raw">Yes</label>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!-- sidebar ends -->
 
             <!-- items starts -->
             <div id="items">
-                <div id="toolbar">
-                    <p id="itemsAmount">Items 1-** of **</p>
-                    <form id="sort-button-area">
-                        <label for="sort-button">Sort by</label>
-                        <select name="sort" id="sort">
-                            <optgroup>
-                                <option value="product-name">Product name</option>
-                                <option value="price">Price</option>
-                            </optgroup>
-                        </select>
-                    </form>
-                </div>
+                <form id="sort-button-area">
+                    <label for="sort-button">Sort by</label>
+                    <select name="sort" id="sort">
+                        <optgroup>
+                            <option value="mixed">Mixed</option>
+                            <option value="product-name">Product name</option>
+                            <option value="price">Price</option>
+                        </optgroup>
+                    </select>
+                    <input type="button" value="sort" id="sort-button">
+                </form>
                 <div id="products-container">
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond1">
+                    <!-- <div class="product-item">
+                        <div class="image-wrapper almonds">
                             <div class="add-somewhere">
                                 <div class="add-to-cart">
-                                    <span class="cart-icon"><i class="fa fa-solid fa-cart-plus"></i></span>
-                                    Add to cart
+                                    <span class="cart-icon">
+                                        <i class="fa fa-solid fa-cart-plus"></i>
+                                    </span>
+                                    <span>Add to cart</span>
                                 </div>
                                 <span class="heart-icon"><i class="fa fa-regular fa-heart"></i></span>
                             </div>
                         </div>
                         <a class="item-link" href="#">NATURAL ALMONDS, LARGE SIZE</a>
-                        <div class="reviews-block">
-                            <span class="reviews">
-                                <i class="fa fa-regular fa-star"></i>
-                                <i class="fa fa-regular fa-star"></i>
-                                <i class="fa fa-regular fa-star"></i>
-                                <i class="fa fa-regular fa-star"></i>
-                                <i class="fa fa-regular fa-star"></i>
-                            </span>
-                            <span class="reviews-amount"></span>
-                        </div>
                         <div class="price-block">
                             <span class="price-label">Starting from</span>
                             <span class="price">CA$13.99</span>
                         </div>
                         <div class="add-somewhere-after">
                             <div class="add-to-cart">
-                                <span class="cart-icon"><i class="fa fa-solid fa-cart-plus"></i></span>
-                                Add to cart
+                                <span class="cart-icon">
+                                    <i class="fa fa-solid fa-cart-plus"></i>
+                                </span>
+                                <span>Add to cart</span>
                             </div>
                             <span class="heart-icon-after"><i class="fa fa-regular fa-heart"></i></span>
                         </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond2"></div>
-                        <a class="item-link" href="#">LEMON PEPPER ALMONDS</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$12.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond3"></div>
-                        <a class="item-link" href="#">ALMONDS, IN SHELL</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$7.99</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond4"></div>
-                        <a class="item-link" href="#">SEA SALT MARCONA ALMONDS, ROASTED</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$20.99</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond5"></div>
-                        <a class="item-link" href="#">ALMOND MEDLEY MIX</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$22.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond6"></div>
-                        <a class="item-link" href="#">BUTTER ROASTED ALMONDS</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$19.99</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond7"></div>
-                        <a class="item-link" href="#">MAPLE SYRUP ALMONDS</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$18.99</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond8"></div>
-                        <a class="item-link" href="#">ORGANIC ALMONDS, DRY ROASTED WITH SEA SALT</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$23.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond9"></div>
-                        <a class="item-link" href="#">ORGANIC ALMONDS, DRY ROASTED, UNSALTED</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$23.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond10"></div>
-                        <a class="item-link" href="#">ORGANIC TAMARI ALMONDS</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$23.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond11"></div>
-                        <a class="item-link" href="#">ORGANIC CALIFORNIA ALMONDS, RAW</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$19.99</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond12"></div>
-                        <a class="item-link" href="#">LEMON AND SALT ALMONDS</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$17.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper" id="almond13"></div>
-                        <a class="item-link" href="#">BBQ ALMONDS</a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price">CA$17.49</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="image-wrapper"></div>
-                        <a class="item-link" href="#"></a>
-                        <div class="reviews-block">
-                            <span class="reviews"></span>
-                            <span class="reviews-amount"></span>
-                        </div>
-                        <div class="price-block">
-                            <span class="price-label">Starting from</span>
-                            <span class="price"></span>
-                        </div>
-                    </div>
-                </div>
-                <div id="page-area">
-                    <div id="pages">
-                        <span>01</span>
-                        <span>02</span>
-                    </div>
-                    <div id="page-button">></div>
+                    </div> -->
                 </div>
             </div>
         </main>
@@ -449,11 +196,11 @@
         <div id="footer-container">
             <div id="left">
                 <p class="footer-title-text">Download our App</p>
-                    <p class="footer-text">Download our app at both PlayStore as well as AppStore</p>
-                    <div id="app-icons">
-                        <img src="../images/headerFooterImg/apple.png" alt="App Store">
-                        <img src="../images/headerFooterImg/google.png" alt="Google Play Store">
-                    </div>
+                <p class="footer-text">Download our app at both PlayStore as well as AppStore</p>
+                <div id="app-icons">
+                    <img src="../images/headerFooterImg/apple.png" alt="App Store">
+                    <img src="../images/headerFooterImg/google.png" alt="Google Play Store">
+                </div>
             </div>
             <div id="middle">
                 <a href="#">
@@ -486,52 +233,85 @@
                 </div>
             </div>
         </div>
-        <p id ="copyright">Copyright &copy 2022 - THE SHOP</p>
+        <p id="copyright">Copyright &copy 2022 - THE SHOP</p>
     </footer>
     <!-- FOOTER SECTION ENDS -->
-    
-    <div id="filters">
-        <p>Filters</p>
-        <div class ="sidebar">
+
+
+    <div class="filters">
+        <p id="filters-heading">Filters</p>
+        <div id="tablet" class="sidebar">
             <div class="filter-options-title">
                 <span>Category</span>
                 <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
             </div>
             <div class="filter-options-content">
-                <ul>
-                    <li><a href="#">Almonds</a></li>
-                    <li><a href="#">Brazil Nuts</a></li>
-                    <li><a href="#">Cashews</a></li>
-                    <li><a href="#">Hazelnuts</a></li>
-                    <li><a href="#">Macadamia Nuts</a></li>
-                    <li><a href="#">Nut Butters</a></li>
-                    <li><a href="#">Pecans</a></li>
-                    <li><a href="#">Pistachios</a></li>
-                    <li><a href="#">Peanuts</a></li>
-                    <li><a href="#">Walnuts</a></li>
+                <ul class="category">
+                    <li>Almonds</li>
+                    <li>Brazil Nuts</li>
+                    <li>Cashews</li>
+                    <li>Hazelnuts</li>
+                    <li>Macadamia Nuts</li>
+                    <li>Nut Butters</li>
+                    <li>Pecans</li>
+                    <li>Pistachios</li>
+                    <li>Peanuts</li>
+                    <li>Walnuts</li>
+                    <li>Nuts</li>
                 </ul>
             </div>
             <div class="filter-options-title">
                 <span>Vegan</span>
-                <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
             </div>
-            <div class="filter-options-content"></div>
+            <div class="filter-options-content">
+                <ul>
+                    <li class="checkboxArea">
+                        <div id="vegan" class="checkbox"><i class="fa fa-solid fa-square-check checkbox-clicked"></i></div>
+                        <label for="vegan">Yes</label>
+                    </li>
+                </ul>
+            </div>
             <div class="filter-options-title">
                 <span>Salt-free</span>
-                <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
             </div>
-            <div class="filter-options-content"></div>
+            <div class="filter-options-content">
+                <ul>
+                    <li class="checkboxArea">
+                        <div id="salt-free" class="checkbox"><i class="fa fa-solid fa-square-check checkbox-clicked"></i></div>
+                        <label for="salt-free">Yes</label>
+                    </li>
+                </ul>
+            </div>
             <div class="filter-options-title">
                 <span>Sugar-free</span>
-                <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
             </div>
-            <div class="filter-options-content"></div>
+            <div class="filter-options-content">
+                <ul>
+                    <li class="checkboxArea">
+                        <div id="sugar-free" class="checkbox"><i class="fa fa-solid fa-square-check checkbox-clicked"></i></div>
+                        <label for="sugar-free">Yes</label>
+                    </li>
+                </ul>
+            </div>
             <div class="filter-options-title">
                 <span>Raw</span>
-                <span class="expand"><i class="fa fa-solid fa-plus"></i></span>
+                <span class="expand"><i class="fa fa-solid fa-minus"></i></span>
             </div>
-            <div class="filter-options-content"></div>
+            <div class="filter-options-content">
+                <ul>
+                    <li class="checkboxArea">
+                        <div id="raw" class="checkbox"><i class="fa fa-solid fa-square-check checkbox-clicked"></i></div>
+                        <label for="raw">Yes</label>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <script src="../js/nuts.js"></script>
+
 </body>
+
 </html>
