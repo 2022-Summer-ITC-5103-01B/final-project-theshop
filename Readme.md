@@ -1,19 +1,11 @@
-## Assignment Name: : Soundtrack Project
+Readme.md
 
-## Name: Aycan Lizor
+## Project Phase: 1
 
-## Student Number: N01534088
 
-## Tasks
 
-- [x] 
+## Name: Parth Lukhi
 
-## Leaning curve and challenges
 
-- point 1
-- point 1
 
-## Resources
-
-- resource 1
-- resources 1
+## Student Number: N01529806
