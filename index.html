@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Shop</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- link for fonts from google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+     
+<body>
+    <div class ="canvas">
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="logo">
+                    
+                    <img src="./assets/img/logo_2.jpeg" alt="website logo" width="125px"> 
+                    
+                    
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Aboutus</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
+                <img src="./assets/img/cart.png" alt="add to cart" class="cart-icon" width ="30px" height="30px">
+                <img src="./assets/img/menu.png" class="menu-icon" alt="menu button" onclick="menutoggle()">
+            </div>
+
+
+            <div class="row">
+                    <div class="col">
+                        <h1>Everything you dream<br> at one place</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>culpa enim ut fugit neque architecto</p>
+                        <a href="" class="button">Explore Categories &#8594;</a>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/img/logo_1.png" alt="image of the logo">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------featured categories------------------------------- -->
+
+    <div class="categories">
+            <div class="small-container">
+                <h2 class="title">categories</h2>
+                <div class="row">
+                    <div class="cat">
+                        <img src="./assets/img/categories/books.jpg" alt="book category">
+                        <h4 class="text">Books</h4>
+                    </div>
+                    <div class="cat">
+                        <img src="./assets/img/categories/computers.jpg" alt="computers category">
+                        <h4 class="text">Computers</h4>
+                    </div>
+                    <div class="cat">
+                        <a href="./fashion.html"><img src="./assets/img/categories/fashion.jpeg" alt="fashion category"></a>
+                        <h4 class="text">Fashion</h4>
+                    </div>
+                    <div class="cat">
+                        <img src="./assets/img/categories/entertainment.jpg" alt="entertainment category">
+                        <h4 class="text">Entertainment</h4>
+                    </div>
+                    <div class="cat">
+                        <img src="./assets/img/categories/nuts.jpg" alt="nuts category">
+                        <h4 class="text">Nuts</h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- -----------------------------offer----------------------------------------- -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                 <div class="col">
+        
+                      <img src="./assets/img/home_offer.png"class="offer-img">
+                 </div>
+                 <div class="col">
+            
+                      <p>Exclusively Available on RedStore</p>
+                      <h1>Smart Band4</h1>
+                      <small>The Mi Smart Band4featuresa39.9%larger
+                      (than Mi Band3)AMOLED color full-touch display with
+                      adjustable brightness,so everything is clear as can
+                      be.</small><br>
+                      <a href="" class="button_offer"> Buy Now&#8594;</a>
+                 </div>
+    </div>
+    <!-- ------------footer-------------------- -->
+
+    <footer>
+        <div class="wrapper">
+            <div class="row">
+                <div class="downloadApp">
+                    <h3>Download our App</h3>
+                    <p>Download our app at both PlayStore as well as AppStore</p>
+                    <div class="app-logo">
+                        <img src="./assets/img/google.png" alt="playstore image">
+                        <img src="./assets/img/apple.png" alt="apple image">
+                    </div>
+                </div>
+
+                <div class="f_tagline">
+                    <img src="./assets/img/logo_2.jpeg" alt="website logo">
+                    <p>Anything you need THE SHOP is always there for you 😊</p>
+                </div>
+
+                <div class="usefulLinks">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <!-- <li>New Arrivals</li>
+                        <li>Categories</li>
+                        <li>Season Sale</li> -->
+                    </ul>
+                </div>
+
+                <div class="followUs">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy 2020 - THE SHOP</p>
+        </div>
+    </footer>
+
+    <!-- --------------------JavaScript------------------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "20px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";  
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
