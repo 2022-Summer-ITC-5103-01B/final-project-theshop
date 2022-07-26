@@ -71,7 +71,7 @@ function nutsPrices(n) {
 //Object that has all above in an organized way
 const nutsTypes = {
     type: ["almonds", "brazil", "cashews", "hazelnuts", "macadamia", "butters", "pecans", "pistachios", "peanuts", "walnuts"],
-    number: [13, 4, 7, 2, 2, 4, 3, 3, 8, 2],
+    number: [13, 4, 7, 2, 2, 4, 3, 3, 8, 2], // the length of each type of nuts( how many elements are there (13-almonds, 4-brazil...))
     image: [almondsImg, brazilImg, cashewsImg, hazelnutsImg, macadamiaImg, buttersImg, pecansImg, pistachiosImg, peanutsImg, walnutsImg],
     name: [almondsNames, brazilNames, cashewsNames, hazelnutsNames, macadamiaNames, buttersNames, pecansNames, pistachiosNames, peanutsNames, walnutsNames],
     price: [almondsPrices, brazilPrices, cashewsPrices, hazelnutsPrices, macadamiaPrices, buttersPrices, pecansPrices, pistachiosPrices, peanutsPrices, walnutsPrices]
@@ -80,7 +80,8 @@ const nutsTypes = {
 //main div(container) that is a parent for all items
 const productsContainer = document.querySelector("#products-container")
 
-//array of all items. One item its an object way that stores number of name and number of nuts in one type
+//array of all items. One item(element in the array) its an object that stores 
+//number of name(example: cashews = 2) and number of nuts(example: there are 7 nuts/elements in cashews category/type) in one type
 const orderedArray = arrayItemsOrder();
 
 //the same array but objects there are not ordered. 
@@ -528,4 +529,19 @@ for(let i=0; i<imageWrapper.length; i++){
     })
 }
 
+///////////////////////////////////////////////////////////////////////////////
+//Onclick on bars icon, the navigation will appear
 
+const menuBar = document.querySelector("#menu-bar")
+const barNavList = document.querySelector(".bar-nav-list")
+const barNavLink = document.querySelectorAll(".bar-nav-link")
+const barShoppingIcon = document.querySelector(".bar-shopping-icon")
+
+menuBar.addEventListener("click", () => {
+    barNavList.classList.toggle("bar-nav-list1")
+    for(let i=0; i<barNavLink.length; i++){
+        barNavLink[i].classList.toggle("bar-nav-link1")
+    }
+    barShoppingIcon.classList.toggle("bar-shopping-icon1")
+    
+})
