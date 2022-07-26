@@ -8,8 +8,9 @@
         HTML, CSS and JavaScript
 
 ## Tasks
-    -  Update the Layout with  HTML and CSS for the third project feature and make it responsive,
-   Create a consistent header, navigation, and footer area for the group project,
+    -  Updated the Layout with  HTML, CSS and Javascript for the Project Phase one and validated it, so now it has no W3C validation errors.
+   Created a consistent header, navigation, and footer area for the group project.
+-  Grids not working in current versions of Safari and Firefox browsers. However, it works in browsers like Google Chrome, Brave very well.
 
    Web Page Laptops
 
