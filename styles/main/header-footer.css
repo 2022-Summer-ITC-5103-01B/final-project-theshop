@@ -27,6 +27,39 @@ header {
 #menu-bar{
     display: none;
 }
+#menu-bar:hover{
+    cursor: pointer;
+    color: #26a69a;
+}
+.bar-nav-list {
+    display: flex;
+    height: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: height 0.3s;
+    left: 0;
+    width: -webkit-fill-available;
+}
+.bar-nav-list1 {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: height 0.3s;
+    left: 0;
+    width: -webkit-fill-available;
+    padding: 1rem
+}
 #main-nav-list {
     display: flex;
     justify-content: center;
@@ -39,18 +72,50 @@ header {
     text-decoration: none;
     margin-right: 1.4rem;
 }
+.bar-nav-link {
+    display: none;
+    color: #555;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+
+}
+.bar-nav-link1 {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
 .main-nav-link:hover,
 .main-nav-link:active {
     color: #26a69a;
 }
-#icon {
-    color: #555;
-    font-size: 1.2rem;
+.bar-nav-link:hover,
+.bar-nav-link:active {
+    color: #26a69a;
 }
-#icon:hover {
+.bar-shopping-icon{
+    font-size: 0;
+    color: #555;
+}
+.bar-shopping-icon1{
+    font-size: 1.2rem;
+    color: #555;
+}
+.bar-shopping-icon1:hover {
     color: #26a69a;
     cursor: pointer;
 }
+.icon {
+    color: #555;
+    font-size: 1.2rem;
+}
+.icon:hover {
+    color: #26a69a;
+    cursor: pointer;
+}
+
 /* HEADER SECTION ENDS */
 
 /* FOOTER SECTION STARTS */
