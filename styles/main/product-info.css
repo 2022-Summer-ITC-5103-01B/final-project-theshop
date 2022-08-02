@@ -103,7 +103,7 @@ main {
     justify-content: space-between;
 }
 
-#price-area label {
+#price-area span {
     width: 25%;
     font-size: 20px;
     text-align: center;
