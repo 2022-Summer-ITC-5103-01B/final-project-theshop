@@ -21,7 +21,7 @@
     - assets/css/queries.css file 
 
 ## Learning curve and challenges
-- Creating an image 'Carousel (Slideshow)' with plain HTML, CSS and JavaScript without using Bootstrap or any framework
+- Creating an image 'Carousel (Slideshow)' with plain HTML, CSS and JavaScript without using Bootstrap or any other framework
 
 ## Resources
 - https://www.w3schools.com/w3css/w3css_slideshow.asp
