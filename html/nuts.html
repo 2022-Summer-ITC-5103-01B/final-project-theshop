@@ -21,38 +21,31 @@
 <body>
     <div class="wrapper">
         <!-- HEADER SECTION STARTS -->
-        <header>
-            <a href="#">
-                <div>
-                    <img id="logo-img" src="../images/headerFooterImg/logo.jpeg" alt="The Shop Logo">
-                </div>
+        <header class="header">
+            <a class="logo-link" href="#">
+                <img class="logo-img" src="../images/headerFooterImg/logo.png" alt="The Shop Logo">
             </a>
-            <div id="main-nav">
-                <i id="menu-bar" class="fa fa-solid fa-bars"></i>
-                <ul class="bar-nav-list">
-                    <li><a class="bar-nav-link" href="#">Home</a></li>
-                    <li><a class="bar-nav-link" href="#">Products</a></li>
-                    <li><a class="bar-nav-link" href="#">Aboutus</a></li>
-                    <li><a class="bar-nav-link" href="#">Contact</a></li>
-                    <li><a class="bar-nav-link" href="#">Store</a></li>
-                    <li><a class="bar-nav-link" href="./login.html">Login</a></li>
-                    <li><span class="bar-shopping-icon"><i class="fa fa-shopping-bag"></i></span></li>
+            <nav class="main-nav">
+                <div href="#" class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="main-nav-list">
+                    <li class="main-nav-item"><a class="main-nav-link" href="#">Home</a></li>
+                    <li class="main-nav-item"><a class="main-nav-link" href="#">Products</a></li>
+                    <li class="main-nav-item"><a class="main-nav-link" href="#">Aboutus</a></li>
+                    <li class="main-nav-item"><a class="main-nav-link" href="#">Contact</a></li>
+                    <li class="main-nav-item"><a class="main-nav-link" href="#">Store</a></li>
+                    <li class="main-nav-item"><a class="main-nav-link" href="login.html">Login</a></li>
+                    <li class="main-nav-item"><span class="main-nav-link icon"><i class="fa fa-shopping-bag"></i></span>
+                    </li>
                 </ul>
-                <nav id="nav-links">
-                    <ul id="main-nav-list">
-                        <li><a class="main-nav-link" href="#">Home</a></li>
-                        <li><a class="main-nav-link" href="#">Products</a></li>
-                        <li><a class="main-nav-link" href="#">Aboutus</a></li>
-                        <li><a class="main-nav-link" href="#">Contact</a></li>
-                        <li><a class="main-nav-link" href="#">Store</a></li>
-                        <li><a class="main-nav-link" href="./login.html">Login</a></li>
-                        <li><span class="icon"><i class="fa fa-shopping-bag"></i></span></li>
-                    </ul>
-                </nav>
-            </div>
+            </nav>
         </header>
         <!-- HEADER SECTION ENDS -->
     </div>
+
     <div id="main-product-image"></div>
     <div id="after-image" class="wrapper">
         <!-- MAIN SECTION STARTS -->
@@ -200,29 +193,38 @@
             </form>
         </div>
     </div>
+
     <!-- FOOTER SECTION STARTS -->
-    <footer>
-        <div id="footer-container">
-            <div id="left">
+    <footer class="footer">
+
+        <!-- FOOTER ROW STARTS -->
+        <div class="footer-grid-container footer-row">
+
+            <!-- LEFT COLUMN STARTS -->
+            <div class="footer-grid-item column left">
                 <p class="footer-title-text">Download our App</p>
                 <p class="footer-text">Download our app at both PlayStore as well as AppStore</p>
-                <div id="app-icons">
+                <div class="app-icons">
                     <img src="../images/headerFooterImg/apple.png" alt="App Store">
                     <img src="../images/headerFooterImg/google.png" alt="Google Play Store">
                 </div>
             </div>
-            <div id="middle">
-                <a href="#">
-                    <div>
-                        <img id="footer-logo-img" src="../images/headerFooterImg/logo.jpeg" alt="The Shop Logo">
-                    </div>
+            <!-- LEFT COLUMN ENDS -->
+
+            <!-- MIDDLE COLUMN STARTS -->
+            <div class="footer-grid-item column middle">
+                <a class="logo-link" href="#">
+                    <img class="footer-logo-img" src="../images/headerFooterImg/logo.png" alt="The Shop Logo">
                 </a>
                 <p class="footer-text">Anything you need THE SHOP is always there for you 😊</p>
             </div>
-            <div id="right">
+            <!-- MIDDLE COLUMN ENDS -->
+
+            <!-- RIGHT COLUMN STARTS -->
+            <div class="footer-grid-item column right">
                 <div>
                     <p class="footer-title-text">Useful Links</p>
-                    <ul id="footer-nav-list">
+                    <ul class="footer-nav-list">
                         <li><a class="footer-nav-link" href="#">Home</a></li>
                         <li><a class="footer-nav-link" href="#">Products</a></li>
                         <li><a class="footer-nav-link" href="#">About Us</a></li>
@@ -233,19 +235,22 @@
 
                 <div>
                     <p class="footer-title-text">Follow us</p>
-                    <ul id="social-nav-list">
-                        <li><span class="footer-icon"><i class="fa fa-facebook-official"></i></span></li>
-                        <li><span class="footer-icon"><i class="fa fa-instagram"></i></span></li>
-                        <li><span class="footer-icon"><i class="fa fa-twitter"></i></span></li>
-                        <li><span class="footer-icon"><i class="fa fa-youtube-play"></i></span></li>
+                    <ul class="social-nav-list">
+                        <li><span class="icon footer-icon"><i class="fa fa-facebook-official"></i></span></li>
+                        <li><span class="icon footer-icon"><i class="fa fa-instagram"></i></span></li>
+                        <li><span class="icon footer-icon"><i class="fa fa-twitter"></i></span></li>
+                        <li><span class="icon footer-icon"><i class="fa fa-youtube-play"></i></span></li>
                     </ul>
                 </div>
             </div>
+            <!-- RIGHT COLUMN ENDS -->
+
         </div>
-        <p id="copyright">Copyright &copy; 2022 - THE SHOP</p>
+        <!-- FOOTER ROW ENDS -->
+
+        <p class="copyright">Copyright &copy 2022 - THE SHOP</p>
     </footer>
     <!-- FOOTER SECTION ENDS -->
-
 
     <div class="filters">
         <p id="filters-heading">Filters</p>
@@ -321,7 +326,11 @@
             </div>
         </div>
     </div>
-    <script src="../js/nuts.js"></script>
+    <script src="../js/nuts/main.js"></script>
+    <script src="../js/nuts/toggle-bar.js"></script>
+    <script src="../js/nuts/go-to-description.js"></script>
+    <script src="../js/nuts/checkbox.js"></script>
+    <script src="../js/nuts/tablet-filters.js"></script>
 
 </body>
 
