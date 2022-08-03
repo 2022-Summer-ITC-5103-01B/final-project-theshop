@@ -7,7 +7,7 @@
 body {
     /* font-size: 16px; */
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#df7a47,#eee6e2);
+    background: radial-gradient(rgb(3, 4, 4), rgb(28, 29, 28));
 }
 
 .wrapper {
@@ -86,7 +86,7 @@ body {
     }
 .dl{
     border-radius: 15px;
-    background:linear-gradient(#d24c24,#b46d50);
+    background: radial-gradient(#7e170e,#874f39);
 }
 h1{
     /* margin-bottom: 10%; */
@@ -96,7 +96,7 @@ h1{
     font-weight: bolder;
     text-align: center;
     color: rgb(8, 28, 50);
-    background: radial-gradient(#d24c24, #882305);
+    /* background: radial-gradient(#d24c24, #882305); */
 }
 .d{
     border-radius: 5%;

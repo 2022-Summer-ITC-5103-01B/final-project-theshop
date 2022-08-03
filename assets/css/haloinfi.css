@@ -7,7 +7,7 @@
 body {
     /* font-size: 16px; */
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#394f69,#d9e6f2);
+    background: radial-gradient(#1c3d65,#262d34);
 }
 
 .wrapper {
@@ -87,7 +87,7 @@ body {
 
 .hfc{
     border-radius: 15px;
-    background:linear-gradient(#abddf1, #213b64);
+    background:radial-gradient(#abddf1, #213b64);
 }
 h1{
     /* margin-bottom: 10%; */

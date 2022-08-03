@@ -7,7 +7,7 @@
 body {
     /* font-size: 16px; */
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#881212,#fcf7f4);
+    background: radial-gradient(rgb(3, 4, 4), rgb(28, 29, 28));
 }
 
 .wrapper {
@@ -79,15 +79,14 @@ body {
 }
 
 .checked {
-    color: rgb(107, 30, 17);
+    color: rgb(179, 96, 3);
     font-size: larger;
     }
 
 
 .hit{
     border-radius: 15px;
-    
-    background:linear-gradient(rgb(177, 40, 40),rgb(207, 202, 202));
+    background:radial-gradient(rgb(124, 32, 32), rgb(20, 18, 18));
 }
 h1{
     /* margin-bottom: 10%; */
@@ -96,8 +95,8 @@ h1{
     font-size: 55px;
     font-weight: bolder;
     text-align: center;
-    color: rgb(30, 3, 3);
-    background: radial-gradient(rgb(166, 24, 24), rgba(0, 0, 0, 0.833));
+    color: rgb(0, 0, 0);
+    /* background: radial-gradient(rgb(166, 24, 24), rgba(0, 0, 0, 0.833)); */
 }
 .h{
     

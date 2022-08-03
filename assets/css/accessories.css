@@ -7,7 +7,7 @@
 body {
     /* font-size: 16px; */
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#87abe3,#fcf7f4);
+    background: radial-gradient(#939190, #272828);
 }
 
 .wrapper {
@@ -40,23 +40,23 @@ body {
 }
 
 .nav-link {
-    color: #555;
+    color: rgb(16, 15, 15);
     text-decoration: none;
     margin-right: 20px;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: #26a69a;
+    color: #f5faf9;
 }
 
 .icon {
-    color: #555;
+    color: rgb(16, 15, 15);
     font-size: 20px;
 }
 
 .icon:hover {
-    color: #26a69a;
+    color: #f5faf9;
     cursor: pointer;
 }
 /* HEADER & NAVIGATION SECTION ENDS */
@@ -65,6 +65,7 @@ body {
 
 .ac{
     border-radius: 15px;
+    background: radial-gradient(rgb(215, 215, 215), rgb(56, 53, 53));
 }
 
 h2{
@@ -83,7 +84,7 @@ h2{
     padding: 55px;
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: center     ;
     justify-items: center;
