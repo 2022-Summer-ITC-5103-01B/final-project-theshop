@@ -1,0 +1,457 @@
+/*Books Main Page*/
+
+@media only screen and (min-width: 1250px) {
+    #img3{margin-left: 80px
+    }
+    #mequal{margin-left: 90px
+    } 
+
+}
+@media only screen and (max-width: 1200px) {
+
+    #maingrid {
+
+        display: grid;
+        gap: 30px;
+        padding: 25px;
+
+        ;
+    }
+
+    #img3{margin-left: 50px
+    }
+    #mequal{margin-left: 50px
+    } 
+}
+
+@media only screen and (min-width:900px) and (max-width: 912px) {
+
+    #maingrid { 
+               margin-left: 80px;
+
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 912px) {
+
+    #maingrid {
+
+        display: grid;
+        grid-template-columns: 204px 204px 204px;
+        grid-template-rows: 60px 400px 400px 400px 400px;
+        gap: 25px;
+        padding: 30px;
+        margin-left: 50px;
+        justify-content:center ;
+        grid-template-areas:
+            "header header header"
+            "bk1 bk2 bk3"
+            "bk4 bk5 bk6"
+            "vid bk7 bk8"
+            "empt empt empt"
+        ;
+    }
+
+    #img3{margin-left: 30px
+    }
+    #mequal{margin-left: 30px
+    } 
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+
+        
+    #img3{margin-left: 120px
+    }
+    #mequal{margin-left: 120px
+    } 
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+    #maingrid{
+    margin-left: 25px;
+    justify-content:center ;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 720px) {
+
+    #maingrid{
+   
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 400px ;
+        margin-bottom: 60px;
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        justify-content:center ;
+        grid-template-areas:
+            "header header"
+            "bk1 bk2"
+            "bk3 bk4"
+            "bk5 bk6"
+            "vid bk8"
+            "empt bk7"
+           ;
+    
+    }
+     
+}
+
+@media only screen and (min-width: 350px) and (max-width: 399px) {
+
+    #maingrid{
+        margin-left: 30px;
+        justify-content:center ;
+       
+       }
+   
+}
+
+@media only screen and (max-width: 399px){
+
+    #maingrid{
+   
+        grid-template-columns: 204px;
+        grid-template-rows: 100px 400px ;
+        margin-bottom: 200px;
+        margin-left: 30px;
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        justify-content:center ;
+        grid-template-areas:
+            "header"
+            "bk1"
+            "bk2"
+            "bk3"
+            "bk4"
+            "bk5"
+            "bk6"
+            "bk7"
+            "bk8"
+            "vid"
+            "empt"
+           ;
+       }
+
+       #img3{margin-left: 40px
+       }
+       #mequal{margin-left: 40px
+       } 
+
+ 
+    }
+
+/*Books Main Page*/
+
+
+
+
+/*DonQuixote Starts*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    #one_book {
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-areas:
+            "div1"
+            "div2"
+            "div3";
+        margin-right: 10px;
+        grid-gap: 0px;
+
+    }
+
+}
+
+@media only screen and (max-width: 359px) {
+    #one_book {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "div1"
+            "div2"
+            "div3";
+        grid-gap: 10px;
+        margin-right: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+    #one_book {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 225px;
+        grid-template-areas:
+            "div1"
+            "div2"
+            "div3";
+        grid-gap: 10px;
+        margin-right: 20px;
+    }
+
+    #reftext {
+        font-size: 9px;
+    }
+    #img3{margin-left: 5px
+    }
+    #mequal{margin-left: 5px
+    } 
+}
+
+/*DonQuixote Ends*/
+
+
+
+/*Sign-In Page Starts*/
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+    .scontainer {
+
+        width: 40%;
+        margin-right: 30px;
+        display: grid;
+        gap: 17px;
+        padding: 10px;
+        grid-template-columns: 200px;
+        grid-template-areas:
+            "head"
+            "firstName"
+            "lastName"
+            "email"
+            "password"
+            "confirm"
+            "policy"
+            "signup"
+            "cancel"
+            "login";
+    }
+
+    #idh3 {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 539px) {
+    .scontainer {
+
+        width: 40%;
+        grid-template-columns: 250px;
+        display: grid;
+        gap: 17px;
+        padding: 10px;
+        grid-template-columns: 200px;
+        grid-template-areas:
+            "head"
+            "firstName"
+            "lastName"
+            "email"
+            "password"
+            "confirm"
+            "policy"
+            "signup"
+            "cancel"
+            "login";
+    }
+
+    #idh3 {
+        font-size: 13px;
+    }
+
+    .input {
+        max-width: 175px;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+    .scontainer {
+        font-size: 10px;
+        width: 40%;
+        margin-right: 60px;
+        display: grid;
+        gap: 17px;
+        padding: 10px;
+        grid-template-columns: 150px;
+        grid-template-areas:
+            "head"
+            "firstName"
+            "lastName"
+            "email"
+            "password"
+            "confirm"
+            "policy"
+            "signup"
+            "cancel"
+            "login";
+    }
+
+    #idh3 {
+        font-size: 13px;
+    }
+
+    .input {
+        width: 150px;
+    }
+
+
+}
+
+
+/*Sig-in Page Ends/
+
+
+
+
+    /* Header */
+
+@media only screen and (max-width: 400px) {
+
+    /* HEADER */
+    #logo-img {
+        width: 4rem;
+    }
+
+    #menu-bar {
+        display: block;
+    }
+
+    #main-nav-list {
+        display: none;
+    }
+
+    /* FOOTER */
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-title-text {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: .9rem;
+    }
+
+    #footer-logo-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer-nav-link {
+        font-size: .9rem;
+    }
+
+    #copyright {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 650px) {
+
+    /* HEADER */
+    #logo-img {
+        width: 5rem;
+    }
+
+    #menu-bar {
+        display: block;
+    }
+
+    #main-nav-list {
+        display: none;
+    }
+
+    /* FOOTER */
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-title-text {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: .9rem;
+    }
+
+    #footer-logo-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer-nav-link {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 820px) {
+
+    /* HEADER */
+    #logo-img {
+        width: 6rem;
+    }
+
+    .main-nav-link {
+        font-size: .8rem;
+    }
+
+    /* FOOTER */
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-title-text {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: .9rem;
+    }
+
+    #footer-logo-img {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .footer-nav-link {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    /* FOOTER */
+    .footer-title-text {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: .9rem;
+    }
+
+    #footer-logo-img {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .footer-nav-link {
+        font-size: .9rem;
+    }
+}
