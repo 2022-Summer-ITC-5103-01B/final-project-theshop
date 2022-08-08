@@ -3,7 +3,7 @@
     src: url(../fonts/Poppins-Regular.ttf);
 }
 body{
-    background: radial-gradient(#87abe3,#fcf7f4);
+    /* background: radial-gradient(#87abe3,#fcf7f4); */
     font-family: 'Poppins';
     font-size: 100%;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body{
 }
 /* HEADER SECTION STARTS */
 .canvas {
-    background: radial-gradient(#87abe3, #fcf7f4);
+    /* background: radial-gradient(#87abe3, #fcf7f4); */
 }
 
 .wrapper {
