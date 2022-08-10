@@ -31,9 +31,11 @@ body {
 }
 
 .logo-img {
-    display: block; /* display: block - To remove extra space below the image */
+    display: block;
+    /* display: block - To remove extra space below the image */
     width: 8rem;
 }
+
 /* LOGO SECTION ENDS */
 
 .toggle-btn {
@@ -68,11 +70,12 @@ body {
     list-style-type: none;
 }
 
-.main-nav-link {
+.main-nav-link,
+.sub-nav-link {
     color: #555;
     font-size: 1rem;
     text-decoration: none;
-    margin-left: 1.4rem;
+    margin-left: 2.4rem;
 }
 
 .main-nav-link:last-child {
@@ -80,8 +83,25 @@ body {
 }
 
 .main-nav-link:hover,
-.main-nav-link:active {
+.main-nav-link:active,
+.sub-nav-link:hover,
+.sub-nav-link:active {
     color: #26a69a;
+}
+
+.sub-nav-list {
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+.main-nav-item:hover .sub-nav-list {
+    display: block;
+    line-height: 1.5;
+}
+
+.sub-nav-list {
+    padding-top: 0.3rem;
 }
 
 .current {
@@ -97,6 +117,7 @@ body {
     color: #26a69a;
     cursor: pointer;
 }
+
 /* HEADER SECTION ENDS */
 
 /* HERO SECTION STARTS */
@@ -107,19 +128,19 @@ body {
     height: 14.4rem;
     overflow: hidden;
     background-size: cover;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .hero-img-1 {
-    background: linear-gradient(to right, rgb(38, 166, 154, 0.95), rgba(0, 0, 0, 0.5)), url(../img/banner-1.jpg) no-repeat top;
+    background: linear-gradient(to right, rgb(38, 166, 154, 0.95), rgba(0, 0, 0, 0.5)), url(../img/banners/banner-1.jpg) no-repeat top;
 }
 
 .hero-img-2 {
-    background: linear-gradient(to right, rgb(38, 166, 154, 0.95), rgba(0, 0, 0, 0.5)), url(../img/banner-2.jpg) no-repeat top;
+    background: linear-gradient(to right, rgb(38, 166, 154, 0.95), rgba(0, 0, 0, 0.5)), url(../img/banners/banner-2.jpg) no-repeat top;
 }
 
 .hero-img-3 {
-    background: linear-gradient(to right, rgb(38, 166, 154, 0.95), rgba(0, 0, 0, 0.5)), url(../img/banner-3.jpg) no-repeat top;
+    background: linear-gradient(to right, rgb(38, 166, 154, 0.95), rgba(0, 0, 0, 0.5)), url(../img/banners/banner-3.jpg) no-repeat top;
 }
 
 .hero-container {
@@ -141,6 +162,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.2;
 }
+
 /* HERO SECTION ENDS */
 
 /* CONTENT SECTION STARTS */
@@ -150,24 +172,28 @@ body {
     overflow: auto;
 }
 
-.less-top-padding {
-    padding-top: 1rem; 
-} 
-
 .sidebar {
     min-width: 20%;
     line-height: 1.2;
     background-color: transparent;
 }
 
-/* STORE PAGE STARTS */
+/* CONTACT PAGE STARTS */
+.content-box {
+    padding: 5rem 0;
+    overflow: auto;
+}
+
+.no-sidebar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
 .address-box {
     margin-top: 3.2rem;
     line-height: 1.2;
-}
-
-.address-box:first-child {
-    margin-top: 0;
 }
 
 .title-text {
@@ -193,10 +219,16 @@ body {
 }
 
 .map-img {
-    display: block; /* display: block - To remove extra space below the image */
+    display: block;
+    /* display: block - To remove extra space below the image */
     width: 100%;
 }
-/* STORE PAGE ENDS */
+
+.contact-content {
+    margin-top: 2rem;
+}
+
+/* CONTACT PAGE ENDS */
 
 /* LAPTOPS PAGE STARTS */
 .features-box {
@@ -245,6 +277,11 @@ body {
     margin-bottom: 1.2rem;
 }
 
+#sort-form {
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -255,6 +292,12 @@ body {
 .card-link {
     color: #000;
     text-decoration: none;
+    transition: transform 250ms;
+}
+
+.card-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -314,6 +357,7 @@ body {
     font-weight: 500;
     text-align: start;
 }
+
 /* LAPTOPS PAGE ENDS */
 /* CONTENT SECTION ENDS */
 
@@ -360,7 +404,8 @@ body {
 }
 
 .footer-logo-img {
-    display: block; /* display: block - To remove extra space below the image */
+    display: block;
+    /* display: block - To remove extra space below the image */
     width: 13rem;
     margin: 0 auto 1.2rem;
 }
@@ -411,6 +456,7 @@ body {
     justify-content: space-between;
     width: 25%;
 }
+
 /* FOOTER SECTION ENDS */
 
 /* DETAIL PAGE SECTION STARTS */
@@ -456,4 +502,87 @@ body {
 .about {
     font-size: 1rem;
 }
+
 /* DETAIL PAGE SECTION ENDS */
+
+/* CONTACT PAGE STARTS */
+.form-container {
+    width: 30rem;
+    margin: auto auto;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-label,
+.textarea-label {
+    font-size: 0.9rem;
+}
+
+.input-text,
+.textarea-text {
+    margin-top: 0.2rem;
+    padding: 0.6rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px;
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    outline: none;
+}
+
+.textarea-text {
+    height: 3rem;
+}
+
+.input-text:focus,
+.textarea-text:focus {
+    border: 1px #26a69a solid;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sort-text {
+    font-size: 1rem;
+    padding-right: 0.3rem;
+}
+
+#sort-select {
+    height: 1.8rem;
+    border-radius: 6px;
+    border: 1px solid #555;
+}
+
+#sort-select:hover {
+    height: 1.8rem;
+    border-radius: 6px;
+    border: 1px solid #555;
+}
+
+.submit-btn,
+#sort-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #555;
+    margin-top: 1rem;
+}
+
+#sort-btn {
+    padding: 0.3rem 1.2rem;
+}
+
+.submit-btn:hover,
+#sort-btn:hover {
+    color: #fff;
+    background-color: #26a69a;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+}
+
+/* CONTACT PAGE ENDS */
