@@ -7,61 +7,21 @@
 body {
     /* font-size: 16px; */
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(rgb(3, 4, 4), rgb(28, 29, 28));
+    background: radial-gradient(#1c3d65,#262d34);
 }
 
-.wrapper {
-    /* max-width: 1600px; */
-    margin: auto;
-    /* padding-left: 25px;
-    padding-right: 25px; */
-    justify-self: start;
-}
-
-/* HEADER & NAVIGATION SECTION STARTS */
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 150px;
-    flex-wrap: wrap;
-}
-
-.logo-img {
-    margin-right: 20px;
-}
-
-.main-nav-list {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    flex-wrap: wrap;
-}
-
-.nav-link {
-    color: #555;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.nav-link:hover,
-.nav-link:active {
-    color: #d93b0f;
+/* TOP NAVIGATION FONT COLORS FOR HALO INFINITY PAGE ONLY STARTS */
+.main-nav-link,
+.sub-nav-link {
+    color: #8a8a8a;
 }
 
 .icon {
-    color: #555;
-    font-size: 20px;
+    color: #8a8a8a;
 }
+/* TOP NAVIGATION FONT COLORS FOR HALO INFINITY PAGE ONLY ENDS */
 
-.icon:hover {
-    color: #e6620b;
-    cursor: pointer;
-}
-/* HEADER & NAVIGATION SECTION ENDS */
-
-/*hitman start*/
+/*haloinfi start*/
 .price{
     display: flex;
     justify-content: center;
@@ -79,14 +39,17 @@ body {
 }
 
 .checked {
-    color: rgb(179, 96, 3);
+    /* display: flex;
+    justify-content: center; */
+    color: rgb(247, 174, 39);
     font-size: larger;
     }
 
-
-.hit{
+.hfc{
+    margin-top: 70px;
+    margin-bottom: 70px;
     border-radius: 15px;
-    background:radial-gradient(rgb(124, 32, 32), rgb(20, 18, 18));
+    background:radial-gradient(#abddf1, #213b64);
 }
 h1{
     /* margin-bottom: 10%; */
@@ -95,11 +58,10 @@ h1{
     font-size: 55px;
     font-weight: bolder;
     text-align: center;
-    color: rgb(0, 0, 0);
-    /* background: radial-gradient(rgb(166, 24, 24), rgba(0, 0, 0, 0.833)); */
+    color: rgb(8, 28, 50);
+    /* background: radial-gradient(#5980a0, #638da9); */
 }
-.h{
-    
+.hf{
     border-radius: 5%;
     margin-top: 80px;
     display: flex;
@@ -108,7 +70,7 @@ h1{
     justify-content: center;
     justify-items: center;
     align-content: center;
-    text-align: center;
+    text-align: justify;
 }
 #for{
     text-align: center;
@@ -135,11 +97,11 @@ h1{
     font-weight: bolder;
 }
 
-.hitm img{
+.hfi img{
     display: flex;
     flex-wrap: wrap;
 }
-/*hitman ends*/
+/*haloinfi ends*/
 
 /* The Modal (background) */
 .modal {
@@ -240,93 +202,4 @@ h1{
   
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }  
-
-/* FOOTER SECTION STARTS */
-.footer {
-    background: #000;
-    color: #8a8a8a;
-    padding: 60px 150px 20px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-}
-
-.footer-row {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.column {
-    float: left;
-}
-
-.left {
-    width: 25%;
-}
-
-.middle {
-    text-align: center;
-    width: 50%;
-}
-
-.right {
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-}
-
-.footer-logo-img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-}
-
-.footer-nav-list {
-    list-style-type: none;
-}
-
-.footer-title-text {
-    margin-bottom: 8px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #26a69a;
-}
-
-.footer-text {
-    font-size: 16px;
-    color: #8a8a8a;
-}
-
-.app-icons {
-    display: flex;
-    margin-top: 24px;
-    flex-wrap: wrap;
-}
-
-.social-nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    list-style-type: none;
-}
-
-.footer-icon:hover {
-    color: #e5e7e9;
-}
-
-.footer-nav-link {
-    text-decoration: none;
-    color: #8a8a8a;
-}
-
-.footer-nav-link:hover {
-    color: #e5e7e9;
-}
-
-.copyright {
-    font-size: 14px;
-    text-align: center;
-}
-/* FOOTER SECTION ENDS */
+  } 
