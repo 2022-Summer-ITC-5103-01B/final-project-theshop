@@ -1,189 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Shop</title>
-        <link rel="stylesheet" href="./Fashion/assets/css/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <!-- link for fonts from google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fashion/assets/img/favicon.ico" type="image/x-icon">
+    <title>The Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- link for fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fashion/assets/css/main.css">
+    <link rel="stylesheet" href="fashion/assets/css/queries.css">
+</head>
+
 <body>
-    <div class ="canvas">
+    <div class="canvas">
         <div class="wrapper">
-            <div class="navbar">
-                <div class="logo">
-                    
-                    <img src="./Fashion/assets/img/logo_2.jpeg" alt="website logo" width="125px"> 
-                    
-                    
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="./Products/products.html">Products</a></li>
-                        <li><a href="./Entertainment/aboutus.html">Aboutus</a></li>
-                        <li><a href="./Laptops/Store_locator.html">Stores</a></li>
-                        <li><a href="./Books/sign_in.html">Login</a></li>
+            <!-- HEADER SECTION STARTS -->
+            <header class="header">
+                <a class="logo-link" href="#">
+                    <img class="logo-img" src="fashion/assets/img/logo.png" alt="The Shop Logo">
+                </a>
+                <nav class="main-nav">
+                    <div class="toggle-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="main-nav-list">
+                        <li class="main-nav-item"><a class="main-nav-link current" href="#">Home</a></li>
+                        <li class="main-nav-item"><a class="main-nav-link" href="entertainment/aboutus.html">About</a></li>
+                        <li class="main-nav-item has-sub-nav-list"><a class="main-nav-link" href="fashion/products.html">Products <i
+                                    class="fa fa-caret-down"></i></a>
+                            <ul class="sub-nav-list">
+                                <li class="main-nav-item sub-list"><a class="sub-nav-link" href="books/all_books.html">Books</a></li>
+                                <li class="main-nav-item sub-list"><a class="sub-nav-link" href="entertainment/entertainment.html">Entertainment</a>
+                                </li>
+                                <li class="main-nav-item sub-list"><a class="sub-nav-link" href="fashion/fashion.html">Fashion</a>
+                                </li>
+                                <li class="main-nav-item sub-list"><a class="sub-nav-link" href="laptops/laptops.html">Laptops</a></li>
+                                <li class="main-nav-item sub-list"><a class="sub-nav-link" href="nuts/html/nuts.html">Nuts</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-item"><a class="main-nav-link" href="laptops/contact.html">Contact</a></li>
+                        <li class="main-nav-item"><a class="main-nav-link" href="nuts/html/login.html">Login</a></li>
+                        <li class="main-nav-item"><span class="main-nav-link icon"><i
+                                    class="fa fa-shopping-bag"></i></span>
+                        </li>
                     </ul>
                 </nav>
-                <img src="./Fashion/assets/img/cart.png" alt="add to cart" class="cart-icon" width ="30px" height="30px">
-                <img src="./Fashion/assets/img/menu.png" class="menu-icon" alt="menu button" onclick="menutoggle()">
-            </div>
+            </header>
+            <!-- HEADER SECTION ENDS -->
 
 
             <div class="row">
-                    <div class="col">
-                        <h1>Everything you dream<br> at one place</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>culpa enim ut fugit neque architecto</p>
-                        <a href="./Products/products.html" class="button">Explore Categories &#8594;</a>
-                    </div>
-                    <div class="col">
-                        <img src="./Fashion/assets/img/logo_1.png" alt="image of the logo">
-                    </div>
+                <div class="col">
+                    <h1>Everything you dream<br> at one place</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>culpa enim ut fugit neque architecto
+                    </p>
+                    <a href="fashion/products.html" class="button">Explore Categories &#8594;</a>
+                </div>
+                <div class="col">
+                    <img src="fashion/assets/img/logo.png" alt="image of the logo">
+                </div>
             </div>
         </div>
     </div>
     <!-- ----------------------------featured categories------------------------------- -->
 
     <div class="categories">
-            <div class="small-container">
-                <h2 class="title">categories</h2>
-                <div class="row">
-                    <div class="cat">
-                        <a href="./Books/all_books.html"><img src="./Fashion/assets/img/categories/books.jpg" alt="book category"></a>
-                        <h4 class="text">Books</h4>
-                    </div>
-                    <div class="cat">
-                        <a href="./Laptops/laptop_products.html"><img src="./Fashion/assets/img/categories/computers.jpg" alt="computers category"></a>
-                        <h4 class="text">Computers</h4>
-                    </div>
-                    <div class="cat">
-                        <a href="./Fashion/fashion.html"><img src="./Fashion/assets/img/categories/fashion.jpeg" alt="fashion category"></a>
-                        <h4 class="text">Fashion</h4>
-                    </div>
-                    <div class="cat">
-                        <a href="./Entertainment/Entertainment.html"><img src="./Fashion/assets/img/categories/entertainment.jpg" alt="entertainment category"></a>
-                        <h4 class="text">Entertainment</h4>
-                    </div>
-                    <div class="cat">
-                        <a href="./NutsShop/html/nuts.html"><img src="./Fashion/assets/img/categories/nuts.jpg" alt="nuts category"></a>
-                        <h4 class="text">Nuts</h4>
-                    </div>
+        <div class="small-container">
+            <h2 class="title">Categories</h2>
+            <div class="row">
+                <div class="cat">
+                    <a href="books/all_books.html"><img src="fashion/assets/img/categories/books.jpg"
+                            alt="book category"></a>
+                    <h4 class="text">Books</h4>
+                </div>
+                <div class="cat">
+                    <a href="laptops/laptops.html"><img src="fashion/assets/img/categories/laptops.jpg"
+                            alt="laptops category"></a>
+                    <h4 class="text">Laptops</h4>
+                </div>
+                <div class="cat">
+                    <a href="fashion/fashion.html"><img src="fashion/assets/img/categories/fashion.jpeg"
+                            alt="fashion category"></a>
+                    <h4 class="text">Fashion</h4>
+                </div>
+                <div class="cat">
+                    <a href="entertainment/entertainment.html"><img
+                            src="fashion/assets/img/categories/entertainment.jpg" alt="entertainment category"></a>
+                    <h4 class="text">Entertainment</h4>
+                </div>
+                <div class="cat">
+                    <a href="nuts/html/nuts.html"><img src="fashion/assets/img/categories/nuts.jpg"
+                            alt="nuts category"></a>
+                    <h4 class="text">Nuts</h4>
                 </div>
             </div>
+        </div>
     </div>
 
     <!-- -----------------------------offer----------------------------------------- -->
     <div class="offer">
         <div class="small-container">
             <div class="row">
-                 <div class="col">
-        
-                      <img src="./Fashion/assets/img/home_offer.png"class="offer-img">
-                 </div>
-                 <div class="col">
-            
-                      <p>Exclusively Available on RedStore</p>
-                      <h1>Smart Band4</h1>
-                      <small>The Mi Smart Band4featuresa39.9%larger
-                      (than Mi Band3)AMOLED color full-touch display with
-                      adjustable brightness,so everything is clear as can
-                      be.</small><br>
-                      <a href="" class="button_offer"> Buy Now&#8594;</a>
-                 </div>
-    </div>
-    <!-- ------------footer-------------------- -->
+                <div class="col">
 
-    <footer>
-        <div class="wrapper">
-            <div class="row">
-                <div class="downloadApp">
-                    <h3>Download our App</h3>
-                    <p>Download our app at both PlayStore as well as AppStore</p>
-                    <div class="app-logo">
-                        <img src="./Fashion/assets/img/google.png" alt="playstore image">
-                        <img src="./Fashion/assets/img/apple.png" alt="apple image">
-                    </div>
+                    <img src="fashion/assets/img/home_offer.png" class="offer-img">
                 </div>
+                <div class="col">
 
-                <div class="f_tagline">
-                    <img src="./Fashion/assets/img/logo_2.jpeg" alt="website logo">
-                    <p>Anything you need THE SHOP is always there for you 😊</p>
+                    <p>Exclusively Available on RedStore</p>
+                    <h1>Smart Band4</h1>
+                    <small>The Mi Smart Band4featuresa39.9%larger
+                        (than Mi Band3)AMOLED color full-touch display with
+                        adjustable brightness,so everything is clear as can
+                        be.</small><br>
+                    <a href="#" class="button_offer"> Buy Now&#8594;</a>
                 </div>
-
-                <div class="usefulLinks">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Home</li>
-                        <li>Products</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <!-- <li>New Arrivals</li>
-                        <li>Categories</li>
-                        <li>Season Sale</li> -->
-                    </ul>
-                </div>
-
-                <div class="followUs">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>YouTube</li>
-                    </ul>
-                </div>
-
             </div>
-            <hr>
-            <p class="copyright">Copyright &copy 2020 - THE SHOP</p>
         </div>
+    </div>
+    <!-- FOOTER SECTION STARTS -->
+    <footer class="footer">
+
+        <!-- FOOTER ROW STARTS -->
+        <div class="footer-grid-container footer-row">
+
+            <!-- LEFT COLUMN STARTS -->
+            <div class="footer-grid-item column left">
+                <p class="footer-title-text">Download our App</p>
+                <p class="footer-text">Download our app at both PlayStore as well as AppStore</p>
+                <div class="app-icons">
+                    <img src="fashion/assets/img/apple.png" alt="App Store">
+                    <img src="fashion/assets/img/google.png" alt="Google Play Store">
+                </div>
+            </div>
+            <!-- LEFT COLUMN ENDS -->
+
+            <!-- MIDDLE COLUMN STARTS -->
+            <div class="footer-grid-item column middle">
+                <a class="logo-link" href="#">
+                    <img class="footer-logo-img" src="fashion/assets/img/logo.png" alt="The Shop Logo">
+                </a>
+                <p class="footer-text">Anything you need THE SHOP is always there for you 😊</p>
+            </div>
+            <!-- MIDDLE COLUMN ENDS -->
+
+            <!-- RIGHT COLUMN STARTS -->
+            <div class="footer-grid-item column right">
+                <div>
+                    <p class="footer-title-text">Useful Links</p>
+                    <ul class="footer-nav-list">
+                        <li><a class="footer-nav-link" href="#">Home</a></li>
+                        <li><a class="footer-nav-link" href="entertainment/aboutus.html">About</a></li>
+                        <li><a class="footer-nav-link" href="fashion/products.html">Products</a></li>
+                        <li><a class="footer-nav-link" href="laptops/contact.html">Contact</a></li>
+                        <li><a class="footer-nav-link" href="nuts/html/login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="footer-title-text">Follow us</p>
+                    <ul class="social-nav-list">
+                        <li><span class="icon footer-icon"><i class="fa fa-facebook-official"></i></span></li>
+                        <li><span class="icon footer-icon"><i class="fa fa-instagram"></i></span></li>
+                        <li><span class="icon footer-icon"><i class="fa fa-twitter"></i></span></li>
+                        <li><span class="icon footer-icon"><i class="fa fa-youtube-play"></i></span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN ENDS -->
+
+        </div>
+        <!-- FOOTER ROW ENDS -->
+
+        <p class="copyright">Copyright &copy; 2022 - THE SHOP</p>
     </footer>
-
-    <!-- --------------------JavaScript------------------------- -->
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "20px"){
-                MenuItems.style.maxHeight = "200px";
-            }
-            else{
-                MenuItems.style.maxHeight = "0px";  
-            }
-        }
-    </script>
-
+    <!-- FOOTER SECTION ENDS -->
+    <script src="fashion/assets/javascript/script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
