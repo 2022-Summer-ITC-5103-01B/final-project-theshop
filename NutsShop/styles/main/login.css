@@ -3,6 +3,7 @@
 }
 #inner{
     display: flex;
+    margin-top: 1.5rem;
 }
 #login{
     width: 50%;
@@ -16,24 +17,19 @@ fieldset{
     display: flex;
     flex-direction: column;
 }
-input{
+input, select{
     border-radius: 20px;
     border: 1px #555 solid;
     margin: 1rem 0;
     padding: 1.1rem 1rem;
     font-size: 16px;
     outline: none;
+    font-family: 'Poppins';
 }
-input:focus{
+input:focus, select:focus{
     border: 2px solid #26a69a;
 }
-#sign-in-area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3rem;
-}
-button{
+#sign-in-button, #register-button{
     border-radius: 20px;
     color: white;
     background-image: linear-gradient(to right, #87abe3 0%, #79CBCA  51%, #87abe3  100%);
@@ -45,11 +41,15 @@ button{
     font-weight: bold;
     font-family: "Poppins";
 }
-#register button{
+
+#sign-in-button{
+    width: 40%;
+}
+#register-button{
     float: right;
     margin-top: 1rem;
 }
-button:hover{
+#register-button:hover, #sign-in-button:hover{
     background-position: right center;
     cursor: pointer;
 }
@@ -58,5 +58,13 @@ button:hover{
     cursor: pointer;
 }
 main{
-    margin-bottom: 5rem;
+    margin: 3rem 0;
+}
+h2,p{
+    padding-bottom: 1rem;
+}
+
+legend{
+    font-size: 22px;
+    padding: 1rem 0;
 }
