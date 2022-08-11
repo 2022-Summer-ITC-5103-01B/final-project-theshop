@@ -1,28 +1,33 @@
 
-## Assignment Name: Phase two - Feature two
+## Assignment Name: Phase three - Feature three
 ## Name: Gunveet Singh Dhillon
 ## Student ID: N01285626
 
 
 ## Tasks
-- Update the Layout with HTML, CSS and JavaScript to add 'Slideshow' feature and make it responsive
+- Updated the Layout with HTML, CSS and JavaScript to populate content into 'laptops.html' & 'laptop-info.html' pages with the help of arrays and make it responsive
 
-- Add some content in:
-    - laptops.html, 01.html, 02.html, 03.html, 04.html, 05.html and 06.html files
+- Created a new file 'laptop-info.html', content is populated through an array in the JavaScript file. Hence no need of 01.html-06.html pages, so those are removed
 
-- Add some image assets in:
-    - assets/img folder
+- Added Sort by 'Low to High Price', 'High to Low Price' & 'Customer Reviews' feature in: 
+    - 'laptops.html' file
 
-- Add some JavaScript code in:
-    - assets/js/script.js file
+- Added some content in:
+    - 'laptops.html', 'laptop-info.html' & 'contact.html' files
 
-- Add some styles in:
-    - assets/css/main.css file 
-    - assets/css/queries.css file 
+- Removed unwanted image assets in:
+    - 'assets/img' folder
+
+- Added some JavaScript code in:
+    - 'assets/js/script.js' file
+
+- Added some styles in:
+    - 'assets/css/main.css' file 
+    - 'assets/css/queries.css' file 
 
 ## Learning curve and challenges
-- Creating an image 'Carousel (Slideshow)' with plain HTML, CSS and JavaScript without using Bootstrap or any other framework
+- Populating the content with the help of array & adding Sorting feature to it, was a hard part in the project but I learnt it well and used it in my web pages
 
 ## Resources
-- https://www.w3schools.com/w3css/w3css_slideshow.asp
+- https://www.w3schools.com/jsref/jsref_sort.asp
 - Murach's HTML5 and CSS3, 4th Edition
