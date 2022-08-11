@@ -46,4 +46,11 @@ const registerButton = document.querySelector("#register-button")
 
 registerButton.addEventListener("click", ()=>{
     location.href="../html/register.html"
+});
+
+
+const signUpButton = document.querySelector("#sign-up-button")
+
+signUpButton.addEventListener("click", ()=>{
+    location.href="../../Books/sign_in.html"
 })

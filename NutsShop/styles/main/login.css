@@ -29,7 +29,7 @@ input, select{
 input:focus, select:focus{
     border: 2px solid #26a69a;
 }
-#sign-in-button, #register-button{
+#sign-in-button, #sign-up-button, #register-button{
     border-radius: 20px;
     color: white;
     background-image: linear-gradient(to right, #87abe3 0%, #79CBCA  51%, #87abe3  100%);
@@ -42,14 +42,14 @@ input:focus, select:focus{
     font-family: "Poppins";
 }
 
-#sign-in-button{
+#sign-in-button, #sign-up-button{
     width: 40%;
 }
 #register-button{
     float: right;
     margin-top: 1rem;
 }
-#register-button:hover, #sign-in-button:hover{
+#register-button:hover, #sign-in-button:hover, #sign-up-button:hover{
     background-position: right center;
     cursor: pointer;
 }
