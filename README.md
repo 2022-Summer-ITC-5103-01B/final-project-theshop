@@ -1,14 +1,63 @@
-## Assignment Name: 
+## Assignment Name: Project The Shop
 
 
-## Name: 
-
-
-## Student Number: 
+## Name: Alla-Anastasiia Gnatkiv, Aycan Lizor, Parth Lukhi, Mann Bhatt, Gunveet Singh Dhillon
 
 
 ## Tasks
 
+- Learning project about internet shopping website. It consists of such pages:
+
+    - Alla-Anastasiia Gnatkiv
+
+        Products folder:
+        - products.html
+
+        NutsShop folder:
+        - login.html
+        - nuts.html
+        - product-info.html
+        - register.html
+        - signed-in.html
+
+
+    - Gunveet Singh Dhillon:
+
+        Laptops folder:
+        - contact.html
+        - laptop-info.html
+        - laptops.html
+
+
+    - Mann Bhatt:
+
+        Fashion folder:
+        - fashion.html
+        - productsDetails.html
+        - index.html
+
+
+    - Parth Lukhi:
+
+        Entertainment folder:
+        - aboutus.html
+        - accessories.html
+        - deathloop.html
+        - entertainment.html
+        - games.html
+        - haloinfi.html
+        - hitman3.html
+        - movies.html
+        - toys.html
+
+
+    - Aycan Lizor:
+    
+        Books folder: 
+        - all_books.html
+        - books_DonQuixote.html
+        - sign_in.html
+        - popop.html
 
 
 
