@@ -10,7 +10,7 @@
 
     - Alla-Anastasiia Gnatkiv
 
-        Products folder:
+        Fashion folder:
         - products.html
 
         NutsShop folder:
@@ -34,6 +34,7 @@
         Fashion folder:
         - fashion.html
         - productsDetails.html
+
         - index.html
 
 
