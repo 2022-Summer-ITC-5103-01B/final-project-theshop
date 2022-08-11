@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NEED TO FILL -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <title>The Shop - Fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- link for fonts from google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/products.css">
     <link rel="stylesheet" href="assets/css/queries.css">
+    <title>Products</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <!-- HEADER SECTION STARTS -->
         <header class="header">
             <a class="logo-link" href="../index.html">
@@ -33,7 +34,7 @@
                 <ul class="main-nav-list">
                     <li class="main-nav-item"><a class="main-nav-link" href="../index.html">Home</a></li>
                     <li class="main-nav-item"><a class="main-nav-link" href="../entertainment/aboutus.html">About</a></li>
-                    <li class="main-nav-item has-sub-nav-list"><a class="main-nav-link" href="../Fashion/products.html">Products <i
+                    <li class="main-nav-item has-sub-nav-list"><a class="main-nav-link current" href="#">Products <i
                                 class="fa fa-caret-down"></i></a>
                         <ul class="sub-nav-list">
                             <li class="main-nav-item sub-list"><a class="sub-nav-link" href="../books/all_books.html">Books</a></li>
@@ -53,102 +54,24 @@
             </nav>
         </header>
         <!-- HEADER SECTION ENDS -->
+        <main>
+            <div id="books" class="category">
+                <div class="btn"><a href="../books/all_books.html">Book Shop</a></div>
+            </div>
+            <div id="laptops" class="category">
+                <div class="btn"><a href="../laptops/laptops.html">Laptops Shop</a></div>
+            </div>
+            <div id="fashion" class="category">
+                <div class="btn"><a href="fashion.html">Fashion Shop</a></div>
+            </div>
+            <div id="entertainment" class="category">
+                <div class="btn"><a href="../entertainment/entertainment.html">Entertainment Shop</a></div>
+            </div>
+            <div id="nuts" class="category">
+                <div class="btn"><a href="../NutsShop/html/nuts.html">Nuts Shop</a></div>
+            </div>
+        </main>
     </div>
-
-
-    <!-- ------------------------------------product details------------------------ -->
-    <div class="wrapper single-product">
-        <div class="row">
-            <div class="productDetails">
-                <img src="./assets/img/main_1.jpg" alt="product photo">
-
-
-
-            </div>
-            <div class="productDetails">
-                <p>Home / Fashion</p>
-                <h1>Special Edition T-shirt</h1>
-                <h4>$50.00</h4>
-                <select>
-                    <option>Select size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>L</option>
-                    <option>M</option>
-                    <option>S</option>
-                </select>
-                <input type="number" value="1">
-                <a href="" class="button"> Add to cart</a>
-                <h3>Product Details <i class="fa fa-indent"></i></h3>
-                <p>
-                    Give your Summer Wardrobe a Style Upgradewith the Special Edition T-shirt. Team it with <br>the pair
-                    of shorts for your morning
-                    workout or a denims for an evening out with friends.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="wrapper">
-
-        <h2>Related Products</h2>
-
-        <div class="row">
-            <div class="product">
-                <img src="assets/img/Product_detail/9/main1.jpg">
-                <h4>T-shirt 1</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="product">
-                <img src="assets/img/Product_detail/10/main1.jpg">
-                <h4>T-shirt 2</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="product">
-                <img src="assets/img/Product_detail/11/main1.jpg">
-                <h4>T-shirt 3</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="product">
-                <img src="assets/img/Product_detail/12/main1.jpg">
-                <h4>T-shirt 4</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-
-    </div>
-    </div>
-
     <!-- FOOTER SECTION STARTS -->
     <footer class="footer">
 
@@ -182,7 +105,7 @@
                     <ul class="footer-nav-list">
                         <li><a class="footer-nav-link" href="../index.html">Home</a></li>
                         <li><a class="footer-nav-link" href="../entertainment/aboutus.html">About</a></li>
-                        <li><a class="footer-nav-link" href="../Fashion/products.html">Products</a></li>
+                        <li><a class="footer-nav-link" href="#">Products</a></li>
                         <li><a class="footer-nav-link" href="../laptops/contact.html">Contact</a></li>
                         <li><a class="footer-nav-link" href="../NutsShop/html/login.html">Login</a></li>
                     </ul>
@@ -207,7 +130,6 @@
     </footer>
     <!-- FOOTER SECTION ENDS -->
     <script src="assets/javascript/script.js"></script>
-
 </body>
 
 </html>
