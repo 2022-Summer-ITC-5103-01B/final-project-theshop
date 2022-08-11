@@ -18,30 +18,44 @@
 </head>
 
 <body>
+    <!-- HEADER SECTION STARTS -->
     <header class="header">
-        <a href="#">
-            <div>
-                <img class="logo-img" src="./images/logo.png" alt="The Shop Logo">
-            </div>
+        <a class="logo-link" href="../index.html">
+            <img class="logo-img" src="assets/img/logo.png" alt="The Shop Logo">
         </a>
-        <div class="main-nav">
-            <a href="#" class="toggle-btn">
+        <nav class="main-nav">
+            <div class="toggle-btn">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </a>
-            <nav class="nav-links">
-                <ul class="main-nav-list">
-                    <li><a class="main-nav-link" href="#">Home</a></li>
-                    <li><a class="main-nav-link" href="#">Products</a></li>
-                    <li><a class="main-nav-link" href="#">Aboutus</a></li>
-                    <li><a class="main-nav-link" href="#">Contact</a></li>
-                    <li><a class="main-nav-link" href="#">Store</a></li>
-                    <li><a class="main-nav-link" href="#">Login</a></li>
-                    <li><span class="icon"><i class="fa fa-shopping-bag"></i></span></li>
-                </ul>
-            </nav>
-        </div>
+            </div>
+            <ul class="main-nav-list">
+                <li class="main-nav-item"><a class="main-nav-link" href="../index.html">Home</a></li>
+                <li class="main-nav-item"><a class="main-nav-link"
+                        href="../entertainment/aboutus.html">About</a></li>
+                <li class="main-nav-item has-sub-nav-list"><a class="main-nav-link"
+                        href="../Products/products.html">Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="sub-nav-list">
+                        <li class="main-nav-item sub-list"><a class="sub-nav-link"
+                                href="../books/all_books.html">Books</a></li>
+                        <li class="main-nav-item sub-list"><a class="sub-nav-link"
+                                href="../entertainment/entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="main-nav-item sub-list"><a class="sub-nav-link"
+                                href="../fashion/fashion.html">Fashion</a>
+                        </li>
+                        <li class="main-nav-item sub-list"><a class="sub-nav-link current" href="#">Laptops</a>
+                        </li>
+                        <li class="main-nav-item sub-list"><a class="sub-nav-link"
+                                href="../NutsShop/html/nuts.html">Nuts</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-item"><a class="main-nav-link" href="contact.html">Contact</a></li>
+                <li class="main-nav-item"><a class="main-nav-link" href="../NutsShop/html/login.html">Login</a></li>
+                <li class="main-nav-item"><span class="main-nav-link icon"><i
+                            class="fa fa-shopping-bag"></i></span></li>
+            </ul>
+        </nav>
     </header>
     <!-- HEADER SECTION ENDS -->
     <div id="wrapper">
@@ -76,18 +90,16 @@
                 <p class="footer-title-text">Download our App</p>
                 <p class="footer-text">Download our app at both PlayStore as well as AppStore</p>
                 <div class="app-icons">
-                    <img src="./images/headerFooterImg/apple.png" alt="App Store">
-                    <img src="./images/headerFooterImg/google.png" alt="Google Play Store">
+                    <img src="./assets/img/apple.png" alt="App Store">
+                    <img src="./assets/img/google.png" alt="Google Play Store">
                 </div>
             </div>
             <!-- LEFT COLUMN ENDS -->
 
             <!-- MIDDLE COLUMN STARTS -->
             <div class="footer-grid-item column middle">
-                <a href="#">
-                    <div>
-                        <img class="footer-logo-img" src="./images/headerFooterImg/logo.jpeg" alt="The Shop Logo">
-                    </div>
+                <a class="logo-link" href="../index.html">
+                    <img class="footer-logo-img" src="assets/img/logo.png" alt="The Shop Logo">
                 </a>
                 <p class="footer-text">Anything you need THE SHOP is always there for you 😊</p>
             </div>
@@ -98,11 +110,11 @@
                 <div>
                     <p class="footer-title-text">Useful Links</p>
                     <ul class="footer-nav-list">
-                        <li><a class="footer-nav-link" href="#">Home</a></li>
-                        <li><a class="footer-nav-link" href="#">Products</a></li>
-                        <li><a class="footer-nav-link" href="#">About Us</a></li>
-                        <li><a class="footer-nav-link" href="#">Store Locator</a></li>
-                        <li><a class="footer-nav-link" href="#">Contact Us</a></li>
+                        <li><a class="footer-nav-link" href="../index.html">Home</a></li>
+                        <li><a class="footer-nav-link" href="../entertainment/aboutus.html">About</a></li>
+                        <li><a class="footer-nav-link" href="../Products/products.html">Products</a></li>
+                        <li><a class="footer-nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="footer-nav-link" href="../NutsShop/html/login.html">Login</a></li>
                     </ul>
                 </div>
 
@@ -121,7 +133,7 @@
         </div>
         <!-- FOOTER ROW ENDS -->
 
-        <p class="copyright">Copyright &copy 2022 - THE SHOP</p>
+        <p class="copyright">Copyright &copy; 2022 - THE SHOP</p>
     </footer>
     <!-- FOOTER SECTION ENDS -->
 
