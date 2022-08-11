@@ -39,7 +39,7 @@ body {
 }
 
 .checked {
-    color: rgb(179, 96, 3);
+    color: rgb(251, 141, 15);
     font-size: larger;
     }
 
@@ -48,7 +48,7 @@ body {
     margin-top: 70px;
     margin-bottom: 70px;
     border-radius: 15px;
-    background:radial-gradient(rgb(124, 32, 32), rgb(20, 18, 18));
+    background:radial-gradient(rgb(222, 129, 129),rgb(124, 32, 32));
 }
 h1{
     /* margin-bottom: 10%; */
@@ -60,8 +60,9 @@ h1{
     color: rgb(0, 0, 0);
     /* background: radial-gradient(rgb(166, 24, 24), rgba(0, 0, 0, 0.833)); */
 }
+
 .h{
-    
+    font-size: large;
     border-radius: 5%;
     margin-top: 80px;
     display: flex;
@@ -72,10 +73,12 @@ h1{
     align-content: center;
     text-align: center;
 }
+
 #for{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: large;
 }
 
 #what{

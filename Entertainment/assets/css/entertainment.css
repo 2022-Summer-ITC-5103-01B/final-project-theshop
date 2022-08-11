@@ -104,4 +104,19 @@ img .hover-shadow{
 .hover-shadow:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.button {
+    background-color: #042b05; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.feed{
+    font-size: larger;
+}
 /* ENTERTAINMENT ENDS */

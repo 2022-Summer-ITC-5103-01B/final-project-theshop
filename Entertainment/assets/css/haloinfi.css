@@ -62,6 +62,7 @@ h1{
     /* background: radial-gradient(#5980a0, #638da9); */
 }
 .hf{
+    font-size: medium;
     border-radius: 5%;
     margin-top: 80px;
     display: flex;
@@ -73,6 +74,7 @@ h1{
     text-align: justify;
 }
 #for{
+    font-size: large;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
